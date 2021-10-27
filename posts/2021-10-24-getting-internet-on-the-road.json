@@ -1,0 +1,136 @@
+{
+  "object": "block",
+  "id": "d244c253-44b5-4260-a630-4a024ce1a4a1",
+  "createdTime": "2021-10-24T00:53:00.000Z",
+  "lastEditedTime": "2021-10-24T03:20:00.000Z",
+  "hasChildren": true,
+  "archived": false,
+  "type": "childPage",
+  "childPage": {
+    "title": "Getting internet on the road"
+  },
+  "title": "Getting internet on the road",
+  "content": [
+    {
+      "object": "block",
+      "id": "2d74d61c-9150-4d30-9d14-cf842f5b9e49",
+      "createdTime": "2021-10-24T00:54:00.000Z",
+      "lastEditedTime": "2021-10-24T00:55:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Our internet setup on the road consists of the following.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "Our internet setup on the road consists of the following.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "b3bbe610-c1aa-4de8-a21d-8b00444bb04c",
+      "createdTime": "2021-10-24T00:55:00.000Z",
+      "lastEditedTime": "2021-10-24T00:55:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "bulletedListItem",
+      "bulletedListItem": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unlimited Verizon data plan",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "Unlimited Verizon data plan",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "45f8fd9b-8b0a-4555-b5e0-76f0ca81ad26",
+      "createdTime": "2021-10-24T00:55:00.000Z",
+      "lastEditedTime": "2021-10-24T00:55:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "bulletedListItem",
+      "bulletedListItem": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Unlimited AT&T data plan",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "Unlimited AT&T data plan",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "fc8ce0d2-a5de-42df-b8ec-a550532b6449",
+      "createdTime": "2021-10-24T03:20:00.000Z",
+      "lastEditedTime": "2021-10-24T03:20:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "heading2",
+      "heading2": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The internets",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "The internets",
+            "href": null
+          }
+        ]
+      }
+    }
+  ],
+  "excerpt": "Our internet setup on the road consists of the following."
+}
