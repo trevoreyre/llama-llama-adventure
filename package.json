@@ -7,11 +7,11 @@
   "license": "UNLICENSED",
   "repository": "trevoreyre/llamallamaadventure",
   "scripts": {
-    "dev": "nuxt -p 3005",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "start": "gridsome develop",
+    "build": "gridsome build",
+    "serve": "serve -p 3005 dist",
+    "explore": "gridsome explore",
+    "lint": "vue-cli-service lint"
   },
   "lint-staged": {
     "*.{js,vue}": "yarn lint"
@@ -22,19 +22,29 @@
     }
   },
   "dependencies": {
+    "@notionhq/client": "^0.4.4",
     "@slate-ui/core": "^0.0.2",
-    "nuxt": "^2.0.0"
+    "cloudinary": "^1.27.1",
+    "gridsome": "^0.7.0",
+    "just-camel-case": "^5.0.0",
+    "just-kebab-case": "^3.0.0",
+    "just-merge": "^2.0.0",
+    "just-typeof": "^2.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^2.0.0",
-    "@nuxtjs/eslint-module": "^1.0.0",
+    "@vue/cli-plugin-eslint": "^4.5.14",
+    "@vue/cli-service": "^4.5.14",
+    "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-gridsome": "^1.6.2",
     "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-vue": "^7.20.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "serve": "^12.0.1",
+    "vue-eslint-parser": "^8.0.0"
   }
 }

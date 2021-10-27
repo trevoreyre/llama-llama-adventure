@@ -1,0 +1,8 @@
+{
+  "include": [
+    "src/components/**/*",
+    "src/layouts/**/*",
+    "src/pages/**/*",
+    "src/templates/**/*"
+  ]
+}

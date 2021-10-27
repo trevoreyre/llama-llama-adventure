@@ -1,23 +1,20 @@
+const isProduction = process.env.NODE_ENV === 'production'
+
 module.exports = {
   root: true,
+  parser: 'vue-eslint-parser',
   env: {
     browser: true,
-    node: true
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
+    node: true,
   },
   extends: [
-    '@nuxtjs',
-    'prettier',
-    'prettier/vue',
+    'plugin:gridsome/recommended',
+    'plugin:vue/essential',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
+    '@vue/prettier',
   ],
-  plugins: [
-    'prettier'
-  ],
-  // add your custom rules here
   rules: {
-  }
+    'no-console': isProduction ? 'error' : 'off',
+    'no-debbugger': isProduction ? 'error' : 'off',
+  },
 }
