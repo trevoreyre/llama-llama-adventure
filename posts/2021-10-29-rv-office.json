@@ -1,0 +1,490 @@
+{
+  "object": "block",
+  "id": "1d7136bc-dda4-407a-a0d0-d1848d271c64",
+  "createdTime": "2021-10-29T00:49:00.000Z",
+  "lastEditedTime": "2021-10-29T01:56:00.000Z",
+  "hasChildren": true,
+  "archived": false,
+  "type": "childPage",
+  "childPage": {
+    "title": "RV Office"
+  },
+  "title": "RV Office",
+  "content": [
+    {
+      "object": "block",
+      "id": "24fdeb96-e2c1-4e82-a907-1e7c2a29f00e",
+      "createdTime": "2021-10-29T00:49:00.000Z",
+      "lastEditedTime": "2021-10-29T01:20:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Figuring out a good office setup in the RV took some doing. Like, a LOT of doing. But in the end, I'm very happy with the results. I actually have a couple different work setups - the main \"office\" in the hallway of our RV, and an outdoor setup I use in our tent when the weather allows. I also have a more mobile setup I can use anywhere, for when the internet at the campground calls it quits and says, \"Not today, buddy! Not today.\" Flexibility is the name of the game in full time RV life.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "Figuring out a good office setup in the RV took some doing. Like, a LOT of doing. But in the end, I'm very happy with the results. I actually have a couple different work setups - the main \"office\" in the hallway of our RV, and an outdoor setup I use in our tent when the weather allows. I also have a more mobile setup I can use anywhere, for when the internet at the campground calls it quits and says, \"Not today, buddy! Not today.\" Flexibility is the name of the game in full time RV life.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "7fc3df3e-fa82-4a9c-9dba-7ab537ceb492",
+      "createdTime": "2021-10-29T00:53:00.000Z",
+      "lastEditedTime": "2021-10-29T01:18:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "heading2",
+      "heading2": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The hallway office",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "The hallway office",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "2f151c0a-b4e1-417a-a2a7-8993e1c0b43a",
+      "createdTime": "2021-10-29T01:18:00.000Z",
+      "lastEditedTime": "2021-10-29T01:18:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "image",
+      "image": {
+        "caption": [],
+        "type": "file",
+        "file": {
+          "url": "https://res.cloudinary.com/trevoreyre/image/upload/v1635471041/llama-llama-adventure/2f151c0a-b4e1-417a-a2a7-8993e1c0b43a.jpg",
+          "width": 3024,
+          "height": 4032
+        }
+      }
+    },
+    {
+      "object": "block",
+      "id": "3e9dd5cf-add3-4de4-8525-2dc67881cb06",
+      "createdTime": "2021-10-29T01:18:00.000Z",
+      "lastEditedTime": "2021-10-29T01:27:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The hallway is my \"office\" in the RV. We have a 36 foot fifth wheel with a mid bunk. The bedroom in the middle of the RV would probably be the most natural choice for an office space, if it didn't belong to our daughter, Lennon. I might hold that against her if she wasn't literally the cutest human in the entire universe.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "The hallway is my \"office\" in the RV. We have a 36 foot fifth wheel with a mid bunk. The bedroom in the middle of the RV would probably be the most natural choice for an office space, if it didn't belong to our daughter, Lennon. I might hold that against her if she wasn't literally the cutest human in the entire universe.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "bfb59c15-431f-41be-90a5-f70f302cbd6f",
+      "createdTime": "2021-10-29T01:30:00.000Z",
+      "lastEditedTime": "2021-10-29T01:30:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "image",
+      "image": {
+        "caption": [],
+        "type": "file",
+        "file": {
+          "url": "https://res.cloudinary.com/trevoreyre/image/upload/v1635471044/llama-llama-adventure/bfb59c15-431f-41be-90a5-f70f302cbd6f.jpg",
+          "width": 2880,
+          "height": 1920
+        }
+      }
+    },
+    {
+      "object": "block",
+      "id": "86556338-0529-4b8d-9e85-6bd50b273e85",
+      "createdTime": "2021-10-29T01:27:00.000Z",
+      "lastEditedTime": "2021-10-29T01:33:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "So the hallway it is. My hallway setup involves an auto pole that I mount my monitor on. The pole is pressure fit, which means we didn't have to drill any holes to mount it. And it's held up my 34\" ultra-wide monitor for a couple years now without skipping a beat.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "So the hallway it is. My hallway setup involves an auto pole that I mount my monitor on. The pole is pressure fit, which means we didn't have to drill any holes to mount it. And it's held up my 34\" ultra-wide monitor for a couple years now without skipping a beat.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "221ed288-8f94-4f09-8d7e-18c827703200",
+      "createdTime": "2021-10-29T01:33:00.000Z",
+      "lastEditedTime": "2021-10-29T01:38:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "My \"standing desk\" is actually a percussion table. Like the kind a drummer would use to hold a laptop next to them while they're drumming. I ordered a custom mouse pad to fit the exact dimensions of the percussion table, and secured it with washers and bolts in the four corners.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "My \"standing desk\" is actually a percussion table. Like the kind a drummer would use to hold a laptop next to them while they're drumming. I ordered a custom mouse pad to fit the exact dimensions of the percussion table, and secured it with washers and bolts in the four corners.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "f8b13dd3-cc30-4506-9746-a06f6d3b801d",
+      "createdTime": "2021-10-29T01:38:00.000Z",
+      "lastEditedTime": "2021-10-29T01:40:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "I also use a standing mat so my feet don't get tired from standing the whole day. If I do get tired, I also have a very slim, height-adjustable chair I can whip out and set up in the hallway. It's not the most comfortable chair in the world, but it folds completely flat, and stows away nicely. And it does the job to give my feet a break when they need one. I've gotten more and more used to standing while working, so I rarely use the chair any more. But it definitely comes in handy.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "I also use a standing mat so my feet don't get tired from standing the whole day. If I do get tired, I also have a very slim, height-adjustable chair I can whip out and set up in the hallway. It's not the most comfortable chair in the world, but it folds completely flat, and stows away nicely. And it does the job to give my feet a break when they need one. I've gotten more and more used to standing while working, so I rarely use the chair any more. But it definitely comes in handy.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "6ab2c313-4da5-49c6-9b8b-ef8258d56d6e",
+      "createdTime": "2021-10-29T01:41:00.000Z",
+      "lastEditedTime": "2021-10-29T01:41:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "heading2",
+      "heading2": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The tent office",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "The tent office",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "30155a12-7f0f-4dc9-bbe6-4084ac5792f8",
+      "createdTime": "2021-10-29T01:41:00.000Z",
+      "lastEditedTime": "2021-10-29T01:43:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The tent office is a more recent addition. We purchased a Clam Quick-Set tent, and we're in love with it. We went back and forth on that decision for, I dunno, at least 6 months, but we definitely should have purchased one earlier. We got the \"Pavilion\" model, which is 12.5 by 12.5 feet, so it's basically the same size as our main kitchen/living area in the RV.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "The tent office is a more recent addition. We purchased a Clam Quick-Set tent, and we're in love with it. We went back and forth on that decision for, I dunno, at least 6 months, but we definitely should have purchased one earlier. We got the \"Pavilion\" model, which is 12.5 by 12.5 feet, so it's basically the same size as our main kitchen/living area in the RV.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "b1ac52f6-0e5c-44ab-af3b-8c7ee4415426",
+      "createdTime": "2021-10-29T01:44:00.000Z",
+      "lastEditedTime": "2021-10-29T01:45:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "image",
+      "image": {
+        "caption": [],
+        "type": "file",
+        "file": {
+          "url": "https://res.cloudinary.com/trevoreyre/image/upload/v1635472617/llama-llama-adventure/b1ac52f6-0e5c-44ab-af3b-8c7ee4415426.jpg",
+          "width": 3024,
+          "height": 4032
+        }
+      }
+    },
+    {
+      "object": "block",
+      "id": "2946504e-aca0-4687-999c-4d2484e534c2",
+      "createdTime": "2021-10-29T01:45:00.000Z",
+      "lastEditedTime": "2021-10-29T01:48:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "In the tent, we have a collapsible camping table from REI that I set up. On the table I set up my laptop on a Nexstand laptop stand, so the screen is higher up and I'm not hunching over to look down at it and wrecking my back. Then I can use my external mouse and keyboard like normal. I set up my collapsible chair I mentioned earlier, and BOOM! Outdoor office, baby! It really is a dreamy setup when it's cool outside, and a light breeze is blowing. Couldn't ask for a better office.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "In the tent, we have a collapsible camping table from REI that I set up. On the table I set up my laptop on a Nexstand laptop stand, so the screen is higher up and I'm not hunching over to look down at it and wrecking my back. Then I can use my external mouse and keyboard like normal. I set up my collapsible chair I mentioned earlier, and BOOM! Outdoor office, baby! It really is a dreamy setup when it's cool outside, and a light breeze is blowing. Couldn't ask for a better office.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "65546ce0-3a8c-492f-a2ea-b849d1d175c1",
+      "createdTime": "2021-10-29T01:49:00.000Z",
+      "lastEditedTime": "2021-10-29T01:49:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "heading2",
+      "heading2": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "The mobile office",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "The mobile office",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "732c3e92-ea24-404c-9451-73bc4db97371",
+      "createdTime": "2021-10-29T01:49:00.000Z",
+      "lastEditedTime": "2021-10-29T01:52:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "And then comes the mobile office. We've all been there. Sometimes the internet at the campground just can't. We have a Verizon and AT&T plan, so usually between the two of them we can work things out. But not always. For those times, I take basically the same setup I have in the outdoor tent on the road. The laptop, stand, mouse, and keyboard all fit in a little backpack. So usually I can just set that up at a coffee shop or library and be good to go. I'll always throw an extension cord in the backpack just in case there's not an outlet close by. And I'll usually throw the collapsible table in the truck just in case. It has definitely come in handy a time or two.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "And then comes the mobile office. We've all been there. Sometimes the internet at the campground just can't. We have a Verizon and AT&T plan, so usually between the two of them we can work things out. But not always. For those times, I take basically the same setup I have in the outdoor tent on the road. The laptop, stand, mouse, and keyboard all fit in a little backpack. So usually I can just set that up at a coffee shop or library and be good to go. I'll always throw an extension cord in the backpack just in case there's not an outlet close by. And I'll usually throw the collapsible table in the truck just in case. It has definitely come in handy a time or two.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "6220402f-6094-4508-a7e6-612ad2922a05",
+      "createdTime": "2021-10-29T01:52:00.000Z",
+      "lastEditedTime": "2021-10-29T01:55:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "As a last resort, I can set up directly in the truck itself. I have a headrest laptop mount that holds the laptop on the back of the driver headrest. So I can prop the laptop up there, and sit in the back seat with a tray to hold my mouse and keyboard. This setup is always my last resort, if the internet at the campground is a no go, and the weather outside is ghastly, and it's a global pandemic and I'm not allowed inside of any buildings. Things happen, ya know? But it works surprisingly well when there's nothing else.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "As a last resort, I can set up directly in the truck itself. I have a headrest laptop mount that holds the laptop on the back of the driver headrest. So I can prop the laptop up there, and sit in the back seat with a tray to hold my mouse and keyboard. This setup is always my last resort, if the internet at the campground is a no go, and the weather outside is ghastly, and it's a global pandemic and I'm not allowed inside of any buildings. Things happen, ya know? But it works surprisingly well when there's nothing else.",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "1171c3da-0301-44ef-8395-83e934e76eec",
+      "createdTime": "2021-10-29T01:55:00.000Z",
+      "lastEditedTime": "2021-10-29T01:55:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "heading2",
+      "heading2": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "Links",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "Links",
+            "href": null
+          }
+        ]
+      }
+    },
+    {
+      "object": "block",
+      "id": "d9251453-e36c-4798-b73b-89a4379af124",
+      "createdTime": "2021-10-29T01:55:00.000Z",
+      "lastEditedTime": "2021-10-29T01:56:00.000Z",
+      "hasChildren": false,
+      "archived": false,
+      "type": "paragraph",
+      "paragraph": {
+        "text": [
+          {
+            "type": "text",
+            "text": {
+              "content": "So there you have it. RV office. Like I said, flexibility is key. I'll post links below to all the different products I use. Feel free to hit us up with any questions or recommendations.",
+              "link": null
+            },
+            "annotations": {
+              "bold": false,
+              "italic": false,
+              "strikethrough": false,
+              "underline": false,
+              "code": false,
+              "color": "default"
+            },
+            "plainText": "So there you have it. RV office. Like I said, flexibility is key. I'll post links below to all the different products I use. Feel free to hit us up with any questions or recommendations.",
+            "href": null
+          }
+        ]
+      }
+    }
+  ],
+  "excerpt": "Figuring out a good office setup in the RV took some doing. Like, a LOT of doing. But in the end, I'm very happy with the results. I actually have a couple different work setups - the main \"office\" in the hallway of our RV, and an outdoor setup"
+}

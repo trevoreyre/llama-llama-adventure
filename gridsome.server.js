@@ -103,9 +103,11 @@ module.exports = function(api) {
               id: imageBlock.id,
               url: imageBlock.image.file.url,
             })
-            imageBlock.image.file.url = uploadedImage.secure_url
-            imageBlock.image.file.width = uploadedImage.width
-            imageBlock.image.file.height = uploadedImage.height
+            imageBlock.image.file = {
+              url: uploadedImage.secure_url,
+              width: uploadedImage.width,
+              height: uploadedImage.height,
+            }
           } catch (error) {
             console.error('Image upload failed', error)
           }

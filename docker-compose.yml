@@ -7,6 +7,7 @@ services:
     volumes:
       - .:/home/node/llamallamaadventure
       - /home/llamallamaadventure/app/node_modules
+      - ~/.ssh:/home/node/.ssh
     ports:
       - '3005:3005'
     stdin_open: true

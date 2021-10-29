@@ -196,7 +196,7 @@ export default {
                   v-if="t.annotations.code"
                   :key="t.text.plainText"
                   as="pre"
-                  :class="$style.code"
+                  class="code"
                 >
                   <code>{{ t.text.content }}</code>
                 </Txt>
@@ -205,31 +205,24 @@ export default {
             <Heading
               v-if="block.type === 'heading1'"
               :key="block.id"
-              size="2xl"
+              as="h2"
+              size="md"
+              weight="bold"
             >
-              <Txt
-                v-for="t in block.heading1.text"
-                :key="t.text.plainText"
-                as="span"
-                :font-weight="t.annotations.bold ? 'bold' : 'normal'"
-              >
+              <template v-for="t in block.heading2.text">
                 {{ t.text.content }}
-              </Txt>
+              </template>
             </Heading>
             <Heading
               v-if="block.type === 'heading2'"
               :key="block.id"
-              size="xl"
+              as="h2"
+              size="md"
               weight="bold"
             >
-              <Txt
-                v-for="t in block.heading2.text"
-                :key="t.text.plainText"
-                as="span"
-                :font-weight="t.annotations.bold ? 'bold' : 'normal'"
-              >
+              <template v-for="t in block.heading2.text">
                 {{ t.text.content }}
-              </Txt>
+              </template>
             </Heading>
             <a
               v-if="block.type === 'bookmark'"
@@ -257,10 +250,15 @@ export default {
   </Layout>
 </template>
 
-<style module>
+<style scoped>
 .code {
   padding: var(--spacing-2xs);
   border-radius: var(--border-radius-md);
   background: var(--color-background-dark);
+}
+
+.inherit {
+  font-size: inherit;
+  font-weight: inherit;
 }
 </style>
