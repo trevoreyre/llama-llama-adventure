@@ -171,7 +171,7 @@ export default {
 <template>
   <Layout>
     <Container size="sm">
-      <Stack gap="xs">
+      <AppStack gap="sm">
         <Heading as="h1" size="lg" weight="bold" line-height="sm">
           {{ post.title }}
         </Heading>
@@ -188,6 +188,8 @@ export default {
                   v-if="!t.annotations.code"
                   :key="t.text.plainText"
                   as="span"
+                  font-size="lg"
+                  line-height="lg"
                   :font-weight="t.annotations.bold ? 'bold' : 'normal'"
                 >
                   {{ t.text.content }}
@@ -197,6 +199,8 @@ export default {
                   :key="t.text.plainText"
                   as="pre"
                   class="code"
+                  font-size="lg"
+                  line-height="lg"
                 >
                   <code>{{ t.text.content }}</code>
                 </Txt>
@@ -219,6 +223,7 @@ export default {
               as="h2"
               size="md"
               weight="bold"
+              mt="2xl"
             >
               <template v-for="t in block.heading2.text">
                 {{ t.text.content }}
@@ -235,22 +240,38 @@ export default {
               v-if="block.type === 'image' && block.image.type === 'external'"
               :key="block.id"
               :src="block.image.external.url"
+              class="image"
             />
             <img
               v-if="block.type === 'image' && block.image.type === 'file'"
               :key="block.id"
-              :src="block.image.file.url"
               :width="block.image.file.width"
               :height="block.image.file.height"
+              sizes="(min-width: 600px) 600px, 100vw"
+              :srcset="
+                `
+                  https://res.cloudinary.com/trevoreyre/image/upload/q_auto,f_auto,w_200/llama-llama-adventure/${block.id} 200w,
+                  https://res.cloudinary.com/trevoreyre/image/upload/q_auto,f_auto,w_400/llama-llama-adventure/${block.id} 400w,
+                  https://res.cloudinary.com/trevoreyre/image/upload/q_auto,f_auto,w_600/llama-llama-adventure/${block.id} 600w,
+                  https://res.cloudinary.com/trevoreyre/image/upload/q_auto,f_auto,w_800/llama-llama-adventure/${block.id} 800w,
+                  https://res.cloudinary.com/trevoreyre/image/upload/q_auto,f_auto,w_1200/llama-llama-adventure/${block.id} 1200w,
+                `
+              "
+              class="image"
             />
           </template>
         </template>
-      </Stack>
+      </AppStack>
     </Container>
   </Layout>
 </template>
 
 <style scoped>
+.image {
+  border-radius: var(--border-radius-lg);
+  --shadow: var(--shadow-md);
+}
+
 .code {
   padding: var(--spacing-2xs);
   border-radius: var(--border-radius-md);

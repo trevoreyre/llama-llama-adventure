@@ -1,16 +1,16 @@
 <script>
 import { Container, H2, H3, Txt } from '@slate-ui/core'
-import { Heading, Link, Logo, Map, Stack } from '~/components'
+import { Heading, Link, Logo, Map } from '~/components'
 
 export default {
-  components: { Container, Heading, Link, Logo, Map, Stack, Txt },
+  components: { Container, Heading, Link, Logo, Map, Txt },
 }
 </script>
 
 <template>
   <Layout>
     <Container :class="$style.tagLine" size="lg" mb="2xl">
-      <Stack gap="sm">
+      <AppStack gap="sm">
         <Heading as="h1" size="2xl">
           Hello! We are the <strong>Eyres</strong> 👋🏼
         </Heading>
@@ -24,12 +24,12 @@ export default {
           We moved into an RV in July 2019, and started travelling full time in
           the summer of 2020.
         </Heading>
-      </Stack>
+      </AppStack>
       <Logo />
     </Container>
     <Container size="lg" mb="2xl">
       <Container size="sm" style="margin-left: 0">
-        <Stack gap="sm">
+        <AppStack gap="sm">
           <Heading size="lg" weight="bold" line-height="sm">
             Follow along
           </Heading>
@@ -38,11 +38,13 @@ export default {
             where we're headed next. If you happen to be in the area, hit us up.
             We'd love to meet and have a beer 🍺
           </Txt>
-        </Stack>
+        </AppStack>
       </Container>
     </Container>
     <Container size="lg">
-      <Map />
+      <AppStack gap="lg">
+        <Map />
+      </AppStack>
     </Container>
   </Layout>
 </template>

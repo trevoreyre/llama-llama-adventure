@@ -1,3 +1,9 @@
+<script>
+export default {
+  name: 'LlamaHidden',
+}
+</script>
+
 <template>
   <span class="hidden">
     <slot></slot>

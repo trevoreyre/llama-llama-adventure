@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'LlamaLink',
   props: {
     href: String,
     to: String,

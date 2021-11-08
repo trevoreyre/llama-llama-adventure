@@ -1,3 +1,9 @@
+<script>
+export default {
+  name: 'LlamaLogo',
+}
+</script>
+
 <template>
   <svg
     :class="$style.logo"

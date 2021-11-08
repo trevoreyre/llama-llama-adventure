@@ -902,6 +902,5 @@
         "text": []
       }
     }
-  ],
-  "excerpt": "This page has all the blocks in Notion, to make sure the GraphQL schema for the Llama Llama Adventure blog always contains data for each block type, even if we aren't using that block in any of our posts. Text Other text with a whole bunch of annotations. Llama"
+  ]
 }

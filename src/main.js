@@ -7,10 +7,14 @@ export default function(Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
 
   // Globally register all App* components and icons
-  const req = require.context('./components', true, /[App|Icon]\w*\.vue$/)
-  req.keys().forEach(filename => {
-    const config = req(filename)
-    const name = path.basename(filename, '.vue')
+  const requireContext = require.context(
+    './components',
+    true,
+    /(?:App|Icon)\w+\.vue$/,
+  )
+  requireContext.keys().forEach(fileName => {
+    const config = requireContext(fileName)
+    const name = path.basename(fileName, '.vue')
     Vue.component(name, config.default || config)
   })
 }

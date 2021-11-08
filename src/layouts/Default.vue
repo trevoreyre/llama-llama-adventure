@@ -1,24 +1,24 @@
 <script>
 import { AppBar, Css } from '@slate-ui/core'
-import { Hidden, Link, Stack } from '~/components'
+import { Hidden, Link } from '~/components'
 
 export default {
-  components: { AppBar, Css, Hidden, Link, Stack },
+  components: { AppBar, Css, Hidden, Link },
 }
 </script>
 
 <template>
   <Css>
     <AppBar class="app-bar" theme="light">
-      <Stack direction="row" gap="xs">
+      <AppStack direction="row" gap="xs">
         <g-link class="nav-link" active-class="active" to="/" exact>
           Home
         </g-link>
         <g-link class="nav-link" active-class="active" to="/posts">
           Notes
         </g-link>
-      </Stack>
-      <Stack class="social-links" direction="row" gap="xs">
+      </AppStack>
+      <AppStack class="social-links" direction="row" gap="xs">
         <Link
           class="social-link"
           href="https://www.instagram.com/llamallamaadventure/"
@@ -37,7 +37,7 @@ export default {
           <Hidden>Email</Hidden>
           <IconMessage />
         </Link>
-      </Stack>
+      </AppStack>
     </AppBar>
     <main class="main">
       <slot />

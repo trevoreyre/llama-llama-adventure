@@ -1,6 +1,7 @@
+export { default as AppStack } from './AppStack.vue'
 export { default as Heading } from './Heading.vue'
 export { default as Hidden } from './Hidden.vue'
 export { default as Link } from './Link.vue'
 export { default as Logo } from './Logo.vue'
 export { default as Map } from './Map.vue'
-export { default as Stack } from './Stack.vue'
+export { default as PostSummary } from './PostSummary.vue'

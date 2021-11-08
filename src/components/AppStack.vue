@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'LlamaAppStack',
   props: {
     as: {
       type: [String, Function],

@@ -4,6 +4,7 @@ import { H1, H2, H3, H4, H5, H6, typographyProps } from '@slate-ui/core'
 const sizeToComponent = { xs: H6, sm: H5, md: H4, lg: H3, xl: H2, '2xl': H1 }
 
 export default {
+  name: 'LlamaHeading',
   components: { H1, H2, H3, H4, H5, H6 },
   props: {
     as: {
