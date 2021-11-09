@@ -56,7 +56,7 @@ export default {
     <Container size="sm">
       <AppStack gap="2xl">
         <AppStack gap="xs">
-          <Heading as="h1" size="2xl">Notes</Heading>
+          <Heading as="h1" size="2xl" line-height="sm">Notes</Heading>
           <Txt as="p" font-size="lg">
             This is where we keep some of our (terribly organized) notes on
             different topics we're researching or thinking about. Some day we

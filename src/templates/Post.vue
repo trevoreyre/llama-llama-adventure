@@ -62,6 +62,7 @@ query ($id: ID!) {
             content
           }
           plainText
+          href
           annotations {
             bold
             italic
@@ -119,6 +120,11 @@ query ($id: ID!) {
       }
       bookmark {
         url
+        caption {
+          text {
+            content
+          }
+        }
       }
       image {
         type
@@ -151,10 +157,10 @@ query ($id: ID!) {
 
 <script>
 import { Container, Txt } from '@slate-ui/core'
-import { Heading } from '~/components'
+import { Heading, Link } from '~/components'
 
 export default {
-  components: { Container, Heading, Txt },
+  components: { Container, Heading, Link, Txt },
   computed: {
     post() {
       return this.$page.post
@@ -172,7 +178,7 @@ export default {
   <Layout>
     <Container size="sm">
       <AppStack gap="sm">
-        <Heading as="h1" size="lg" weight="bold" line-height="sm">
+        <Heading as="h1" size="2xl" line-height="sm">
           {{ post.title }}
         </Heading>
         <template v-if="post.content.length">
@@ -185,8 +191,8 @@ export default {
             >
               <template v-for="t in block.paragraph.text">
                 <Txt
-                  v-if="!t.annotations.code"
-                  :key="t.text.plainText"
+                  v-if="!t.annotations.code && !t.href"
+                  :key="t.plainText"
                   as="span"
                   font-size="lg"
                   line-height="lg"
@@ -196,7 +202,7 @@ export default {
                 </Txt>
                 <Txt
                   v-if="t.annotations.code"
-                  :key="t.text.plainText"
+                  :key="t.plainText"
                   as="pre"
                   class="code"
                   font-size="lg"
@@ -204,6 +210,9 @@ export default {
                 >
                   <code>{{ t.text.content }}</code>
                 </Txt>
+                <Link v-if="t.href" :key="t.plainText" :href="t.href">
+                  {{ t.text.content }}
+                </Link>
               </template>
             </Txt>
             <Heading
@@ -229,13 +238,19 @@ export default {
                 {{ t.text.content }}
               </template>
             </Heading>
-            <a
+            <Txt
               v-if="block.type === 'bookmark'"
               :key="block.id"
-              :href="block.bookmark.url"
+              as="span"
+              font-size="lg"
+              line-height="lg"
             >
-              {{ block.bookmark.url }}
-            </a>
+              <Link :href="block.bookmark.url">
+                <template v-for="t in block.bookmark.caption">
+                  {{ t.text.content }}
+                </template>
+              </Link>
+            </Txt>
             <img
               v-if="block.type === 'image' && block.image.type === 'external'"
               :key="block.id"

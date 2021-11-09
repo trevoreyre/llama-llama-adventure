@@ -55,11 +55,15 @@ query {
 
 <style scoped>
 .app-bar {
-  padding: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
   --border: var(--border-none);
   position: sticky;
   top: 0;
   z-index: var(--z-index-sticky);
+}
+
+.app-bar::v-deep .container {
+  max-width: var(--breakpoint-lg);
 }
 
 .nav-link {
