@@ -11,6 +11,7 @@ const typeOf = require('just-typeof')
 const util = require('util')
 const xlsx = require('xlsx')
 
+const isDevelopment = process.env.NODE_ENV === 'development'
 const writeBuildFiles = process.env.WRITE_BUILD_FILES
 const notionClient = new NotionClient({ auth: process.env.NOTION_AUTH_TOKEN })
 cloudinary.config({
@@ -28,7 +29,7 @@ module.exports = api => {
 
     for (const post of posts) {
       postCollection.addNode(post)
-      if (writeBuildFiles) {
+      if (writeBuildFiles && !isDevelopment) {
         await writePostToFiles(posts)
       }
     }
@@ -40,7 +41,7 @@ module.exports = api => {
     for (const place of places) {
       placeCollection.addNode(place)
     }
-    if (writeBuildFiles) {
+    if (writeBuildFiles && !isDevelopment) {
       await writeFile('./places/places.json', places)
     }
   })
@@ -54,6 +55,22 @@ module.exports = api => {
  * Gets all posts from Notion to add to collection
  */
 async function getPosts() {
+  // If in development, we can load posts directly from disk
+  if (isDevelopment) {
+    let posts = []
+    const postFileNames = await fs.readdir('./posts')
+
+    postFileNames
+      .filter(fileName => fileName !== 'posts.json')
+      .forEach(fileName => {
+        const post = require(`./posts/${fileName}`)
+        posts.push(post)
+      })
+
+    return posts
+  }
+
+  // For a production build, get all posts from the Notion API
   const blocksResponse = await notionClient.blocks.children.list({
     block_id: process.env.NOTION_PAGE_ID,
     page_size: 100,
@@ -130,6 +147,12 @@ async function uploadImage({ id, url }) {
  * RV Trip Wizard to JavaScript data objects
  */
 async function getPlaces() {
+  // If in development, we can load places directly from disk
+  if (isDevelopment) {
+    const places = require('./places/places.json')
+    return places
+  }
+
   const placesFileNames = await fs.readdir('./places')
 
   const trips = await Promise.all(
@@ -142,26 +165,52 @@ async function getPlaces() {
           xlsx.utils.sheet_to_json(tripSummarySheet, { range: 3 }),
         )
 
-        const trip = tripData
+        const places = tripData
           .filter(place => place.latitude && place.longitude && place.nights)
-          .map(place => ({
-            name: place.stopName.split(/\r?\n/)[0],
-            arrivalDate: DateTime.fromFormat(
-              place.arrival,
-              'EEEE, MMMM dd, yyyy',
-            ).toISODate(),
-            departureDate: DateTime.fromFormat(
-              place.depart,
-              'EEEE, MMMM dd, yyyy',
-            ).toISODate(),
-            latitude: place.latitude,
-            longitude: place.longitude,
-            miles: place.miles,
-            location: place.location,
-            url: place.url,
-          }))
+          .map(_place => {
+            const place = {
+              name: _place.stopName.split(/\r?\n/)[0],
+              arrivalDate: DateTime.fromFormat(
+                _place.arrival,
+                'EEEE, MMMM dd, yyyy',
+              ).toISODate(),
+              departureDate: DateTime.fromFormat(
+                _place.depart,
+                'EEEE, MMMM dd, yyyy',
+              ).toISODate(),
+              latitude: _place.latitude,
+              longitude: _place.longitude,
+              miles: _place.miles,
+              location: _place.location,
+              url: _place.url,
+            }
 
-        return trip
+            if (place.location) {
+              /**
+               * Extract the city and state by finding the city, state, and 5-digit ZIP code
+               * after an address.
+               *
+               * ```js
+               * const location = '7234 E State Rd 46, Batesville, IN 47006'
+               * location.match(cityStateRegex)
+               * // -> [', Batesville, IN 47006', 'Batesville, IN']
+               * ```
+               */
+              const cityStateRegex = /, ([^,]+, ..) \d\d\d\d\d/
+              const cityStateMatch = place.location.match(cityStateRegex)
+              if (cityStateMatch) {
+                const [address] = place.location.split(cityStateMatch[0])
+                const [city, state] = cityStateMatch[1].split(', ')
+                place.address = address
+                place.city = city
+                place.state = state
+              }
+            }
+
+            return place
+          })
+
+        return places
       }),
   )
 

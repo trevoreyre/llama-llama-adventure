@@ -1,9 +1,9 @@
 <script>
-import { Container, H2, H3, Txt } from '@slate-ui/core'
-import { Heading, Link, Logo, Map } from '~/components'
+import { Container, Txt } from '@slate-ui/core'
+import { Heading, Link, Logo, PlacesMap, PlacesStats } from '~/components'
 
 export default {
-  components: { Container, Heading, Link, Logo, Map, Txt },
+  components: { Container, Heading, Link, Logo, PlacesMap, PlacesStats, Txt },
 }
 </script>
 
@@ -42,8 +42,9 @@ export default {
       </Container>
     </Container>
     <Container size="lg">
-      <AppStack gap="lg">
-        <Map />
+      <AppStack gap="2xl">
+        <PlacesStats />
+        <PlacesMap />
       </AppStack>
     </Container>
   </Layout>

@@ -7,7 +7,10 @@
     "longitude": -114.41297,
     "miles": 163.6,
     "location": "12705 E South Frontage Rd, Yuma, AZ 85367",
-    "url": "https://rvonthego.com/arizona/foothill-village-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/arizona/foothill-village-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "12705 E South Frontage Rd",
+    "city": "Yuma",
+    "state": "AZ"
   },
   {
     "name": "Mesa Spirit RV Resort",
@@ -17,7 +20,10 @@
     "longitude": -111.76616,
     "miles": 195,
     "location": "3020 E Main St, Mesa, AZ 85213",
-    "url": "https://rvonthego.com/arizona/mesa-spirit-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/arizona/mesa-spirit-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "3020 E Main St",
+    "city": "Mesa",
+    "state": "AZ"
   },
   {
     "name": "Verde Valley RV & Camping Resort",
@@ -27,7 +33,10 @@
     "longitude": -111.94951,
     "miles": 121.4,
     "location": "6400 E. Thousand Trails Rd, Cottonwood, AZ 86326",
-    "url": "https://rvonthego.com/arizona/verde-valley-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/arizona/verde-valley-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "6400 E. Thousand Trails Rd",
+    "city": "Cottonwood",
+    "state": "AZ"
   },
   {
     "name": "Grand Canyon Railway RV Park",
@@ -37,7 +46,10 @@
     "longitude": -112.19424,
     "miles": 94.9,
     "location": "601 W Franklin Ave, Williams, AZ 86046",
-    "url": "https://www.thetrain.com/lodging/rv-park/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.thetrain.com/lodging/rv-park/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "601 W Franklin Ave",
+    "city": "Williams",
+    "state": "AZ"
   },
   {
     "name": "Las Vegas RV Resort",
@@ -47,7 +59,10 @@
     "longitude": -115.06465,
     "miles": 215,
     "location": "3890 S Nellis Blvd, Las Vegas, NV 89121",
-    "url": "https://www.lasvegasrvresort.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.lasvegasrvresort.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "3890 S Nellis Blvd",
+    "city": "Las Vegas",
+    "state": "NV"
   },
   {
     "name": "Chinook RV Resort",
@@ -57,7 +72,10 @@
     "longitude": -124.05207,
     "miles": 45.7,
     "location": "17465 Us Hwy 101 N Klamath, CA 95548, Klamath, CA 95548",
-    "url": "https://www.chinookrvresort.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.chinookrvresort.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "17465 Us Hwy 101 N Klamath, CA 95548",
+    "city": "Klamath",
+    "state": "CA"
   },
   {
     "name": "Stafford RV Park and Campground",
@@ -67,7 +85,10 @@
     "longitude": -124.05474,
     "miles": 95.5,
     "location": "385 North Rd, Scotia, CA 95565",
-    "url": "https://staffordrvpark.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://staffordrvpark.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "385 North Rd",
+    "city": "Scotia",
+    "state": "CA"
   },
   {
     "name": "Russian River RV Campground",
@@ -77,7 +98,10 @@
     "longitude": -123.01931,
     "miles": 151.9,
     "location": "33655 Geysers Rd, Cloverdale, CA 95425",
-    "url": "https://rvonthego.com/california/russian-river-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/russian-river-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "33655 Geysers Rd",
+    "city": "Cloverdale",
+    "state": "CA"
   },
   {
     "name": "Lake Minden RV Resort - Thousand Trails",
@@ -87,7 +111,10 @@
     "longitude": -121.56985,
     "miles": 144.9,
     "location": "1256 Marcum Rd, Nicolaus, CA 95659",
-    "url": "https://rvonthego.com/california/lake-minden-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/lake-minden-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1256 Marcum Rd",
+    "city": "Nicolaus",
+    "state": "CA"
   },
   {
     "name": "Turtle Beach RV Resort (formerly Turtle Beach Fish Camp)",
@@ -97,7 +124,10 @@
     "longitude": -121.29849,
     "miles": 88.1,
     "location": "703 E. Williamson Rd., Manteca, CA 95337",
-    "url": "https://rvonthego.com/california/turtle-beach-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/turtle-beach-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "703 E. Williamson Rd.",
+    "city": "Manteca",
+    "state": "CA"
   },
   {
     "name": "San Francisco RV Resort",
@@ -107,7 +137,10 @@
     "longitude": -122.49205,
     "miles": 87.8,
     "location": "700 Palmetto Ave., Pacifica, CA 94044",
-    "url": "https://rvonthego.com/california/san-francisco-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/san-francisco-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "700 Palmetto Ave.",
+    "city": "Pacifica",
+    "state": "CA"
   },
   {
     "name": "Thousand Trails / Morgan Hill RV Resort",
@@ -117,7 +150,10 @@
     "longitude": -121.66508,
     "miles": 73.8,
     "location": "12895 Uvas Rd, Morgan Hill, CA 95037",
-    "url": "https://rvonthego.com/california/morgan-hill-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/morgan-hill-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "12895 Uvas Rd",
+    "city": "Morgan Hill",
+    "state": "CA"
   },
   {
     "name": "Marina Dunes RV Park",
@@ -127,7 +163,10 @@
     "longitude": -121.80311,
     "miles": 39.4,
     "location": "3330 Dunes Rd, Marina, CA 93933",
-    "url": "https://rvonthego.com/california/marina-dunes-rv-park/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/marina-dunes-rv-park/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "3330 Dunes Rd",
+    "city": "Marina",
+    "state": "CA"
   },
   {
     "name": "Pacific Dunes Ranch RV Resort",
@@ -137,7 +176,10 @@
     "longitude": -120.61567,
     "miles": 155.3,
     "location": "1205 Silver Spur Place, Oceano, CA 93445",
-    "url": "https://rvonthego.com/california/pacific-dunes-ranch-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/pacific-dunes-ranch-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1205 Silver Spur Place",
+    "city": "Oceano",
+    "state": "CA"
   },
   {
     "name": "Giessinger Winery",
@@ -147,7 +189,10 @@
     "longitude": -118.91098,
     "miles": 145.8,
     "location": "365 Santa Clara St, Fillmore, CA 93015-2013, United States",
-    "url": ""
+    "url": "",
+    "address": "365 Santa Clara St",
+    "city": "Fillmore",
+    "state": "CA"
   },
   {
     "name": "Wilderness Lakes Preserve - Thousand Trails",
@@ -157,7 +202,10 @@
     "longitude": -117.13779,
     "miles": 137.6,
     "location": "30605 Briggs Rd, Menifee, CA 92584",
-    "url": "https://rvonthego.com/california/wilderness-lakes-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/wilderness-lakes-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "30605 Briggs Rd",
+    "city": "Menifee",
+    "state": "CA"
   },
   {
     "name": "Palm Springs RV Resort",
@@ -167,7 +215,10 @@
     "longitude": -116.31014,
     "miles": 72,
     "location": "77500 Varner Rd, Palm Desert, CA 92211",
-    "url": "https://rvonthego.com/california/palm-springs-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/california/palm-springs-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "77500 Varner Rd",
+    "city": "Palm Desert",
+    "state": "CA"
   },
   {
     "name": "McArthur's Temple View RV Resort",
@@ -177,7 +228,10 @@
     "longitude": -113.58307,
     "miles": 125,
     "location": "975 S Main St, St George, UT 84770",
-    "url": "https://www.templeviewrv.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.templeviewrv.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "975 S Main St",
+    "city": "St George",
+    "state": "UT"
   },
   {
     "name": "Red Canyon RV Park and Campground",
@@ -187,7 +241,10 @@
     "longitude": -112.36192,
     "miles": 127.2,
     "location": "3279 UT-12, Panguitch, UT 84759",
-    "url": "https://www.redcanyonvillage.com/red-canyon-village-services#anchor2?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.redcanyonvillage.com/red-canyon-village-services#anchor2?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "3279 UT-12",
+    "city": "Panguitch",
+    "state": "UT"
   },
   {
     "name": "Richfield KOA",
@@ -197,7 +254,10 @@
     "longitude": -112.09396,
     "miles": 121.5,
     "location": "590 West 600 South, Richfield, UT 84701",
-    "url": "https://koa.com/campgrounds/richfield/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://koa.com/campgrounds/richfield/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "590 West 600 South",
+    "city": "Richfield",
+    "state": "UT"
   },
   {
     "name": "ACT Campground & Environmental Learning Center",
@@ -207,7 +267,10 @@
     "longitude": -109.52265,
     "miles": 181.4,
     "location": "1536 Millcreek Dr, Moab, UT 84532",
-    "url": "http://actcampground.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "http://actcampground.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1536 Millcreek Dr",
+    "city": "Moab",
+    "state": "UT"
   },
   {
     "name": "Burns RV Park",
@@ -217,7 +280,10 @@
     "longitude": -119.04983,
     "miles": 159.5,
     "location": "1273 Seneca Dr, Burns, OR 97720",
-    "url": "http://www.burnsrvpark.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "http://www.burnsrvpark.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1273 Seneca Dr",
+    "city": "Burns",
+    "state": "OR"
   },
   {
     "name": "Bend-Sunriver RV Campground - Thousand Trails",
@@ -227,7 +293,10 @@
     "longitude": -121.45361,
     "miles": 151,
     "location": "17480 South Century Dr, Bend, OR 97707",
-    "url": "https://rvonthego.com/oregon/bend-sunriver-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/bend-sunriver-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "17480 South Century Dr",
+    "city": "Bend",
+    "state": "OR"
   },
   {
     "name": "Gresham, OR",
@@ -246,7 +315,10 @@
     "longitude": -121.99693,
     "miles": 28.9,
     "location": "65000 E. Hwy 26, Welches, OR 97067",
-    "url": "https://rvonthego.com/oregon/mt-hood-village-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/mt-hood-village-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "65000 E. Hwy 26",
+    "city": "Welches",
+    "state": "OR"
   },
   {
     "name": "Seaside RV Resort, Thousand Trails",
@@ -256,7 +328,10 @@
     "longitude": -123.90688,
     "miles": 122.9,
     "location": "1703 12th Avenue, Seaside, OR 97138",
-    "url": "https://rvonthego.com/oregon/seaside-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/seaside-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1703 12th Avenue",
+    "city": "Seaside",
+    "state": "OR"
   },
   {
     "name": "Pacific City RV & Camping Resort - Thousand Trails",
@@ -266,7 +341,10 @@
     "longitude": -123.96844,
     "miles": 71.9,
     "location": "30000 Sandlake Rd, Cloverdale, OR 97112",
-    "url": "https://rvonthego.com/oregon/pacific-city-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/pacific-city-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "30000 Sandlake Rd",
+    "city": "Cloverdale",
+    "state": "OR"
   },
   {
     "name": "Whalers Rest RV & Camping Resort",
@@ -276,7 +354,10 @@
     "longitude": -124.07148,
     "miles": 56.5,
     "location": "50 SE 123 Street, South Beach, OR 97366",
-    "url": "https://rvonthego.com/oregon/whalers-rest-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/whalers-rest-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "50 SE 123 Street",
+    "city": "South Beach",
+    "state": "OR"
   },
   {
     "name": "South Jetty RV & Camping Resort (Thousand Trails)",
@@ -286,7 +367,10 @@
     "longitude": -124.11105,
     "miles": 45.1,
     "location": "5010 S Jetty Rd, Florence, OR 97439",
-    "url": "https://rvonthego.com/oregon/south-jetty-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/south-jetty-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "5010 S Jetty Rd",
+    "city": "Florence",
+    "state": "OR"
   },
   {
     "name": "Whalers Rest RV & Camping Resort",
@@ -296,7 +380,10 @@
     "longitude": -124.07148,
     "miles": 45.1,
     "location": "50 SE 123 Street, South Beach, OR 97366",
-    "url": "https://rvonthego.com/oregon/whalers-rest-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/whalers-rest-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "50 SE 123 Street",
+    "city": "South Beach",
+    "state": "OR"
   },
   {
     "name": "South Jetty RV & Camping Resort (Thousand Trails)",
@@ -306,7 +393,10 @@
     "longitude": -124.11105,
     "miles": 45.1,
     "location": "5010 S Jetty Rd, Florence, OR 97439",
-    "url": "https://rvonthego.com/oregon/south-jetty-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/oregon/south-jetty-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "5010 S Jetty Rd",
+    "city": "Florence",
+    "state": "OR"
   },
   {
     "name": "Bandon By The Sea RV Park",
@@ -316,7 +406,10 @@
     "longitude": -124.41534,
     "miles": 73.3,
     "location": "49612 Highway 101, Bandon, OR 97411",
-    "url": "https://www.bandonbythesearvpark.com?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.bandonbythesearvpark.com?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "49612 Highway 101",
+    "city": "Bandon",
+    "state": "OR"
   },
   {
     "name": "Secret Camp RV Park",
@@ -326,7 +419,10 @@
     "longitude": -124.37017,
     "miles": 54,
     "location": "95614 Jerrys Flat Rd, Gold Beach, OR 97444",
-    "url": "https://www.secretcamprvpark.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.secretcamprvpark.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "95614 Jerrys Flat Rd",
+    "city": "Gold Beach",
+    "state": "OR"
   },
   {
     "name": "AtRivers Edge RV Resort",
@@ -336,7 +432,10 @@
     "longitude": -124.25158,
     "miles": 34.7,
     "location": "98203 S Bank Chetco River Rd, Brookings, OR 97415",
-    "url": "https://www.atriversedge.com?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://www.atriversedge.com?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "98203 S Bank Chetco River Rd",
+    "city": "Brookings",
+    "state": "OR"
   },
   {
     "name": "Stoneyard Distillery",
@@ -346,7 +445,10 @@
     "longitude": -107.04113,
     "miles": 230.1,
     "location": "4600 US-6, Gypsum, CO 81637-9632, United States",
-    "url": ""
+    "url": "",
+    "address": "4600 US-6",
+    "city": "Gypsum",
+    "state": "CO"
   },
   {
     "name": "Clear Creek  RV Park",
@@ -356,7 +458,10 @@
     "longitude": -105.23042,
     "miles": 131.4,
     "location": "1400 10th St, Golden, CO 80401",
-    "url": "https://rec.cityofgolden.net/wbwsc/webtrac.wsc/splash.html?interfaceparameter=3&utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rec.cityofgolden.net/wbwsc/webtrac.wsc/splash.html?interfaceparameter=3&utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1400 10th St",
+    "city": "Golden",
+    "state": "CO"
   },
   {
     "name": "Pals Brewing Company",
@@ -366,7 +471,10 @@
     "longitude": -100.79225,
     "miles": 272.6,
     "location": "4520 S Buffalo Bill Ave, North Platte, NE 69101, United States",
-    "url": ""
+    "url": "",
+    "address": "4520 S Buffalo Bill Ave",
+    "city": "North Platte",
+    "state": "NE"
   },
   {
     "name": "West Omaha / NE Lincoln KOA Holiday",
@@ -376,7 +484,10 @@
     "longitude": -96.26604,
     "miles": 259.3,
     "location": "14601 Highway 6, Gretna, NE 68028",
-    "url": "https://koa.com/campgrounds/west-omaha/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://koa.com/campgrounds/west-omaha/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "14601 Highway 6",
+    "city": "Gretna",
+    "state": "NE"
   },
   {
     "name": "Twisted Vine Brewery",
@@ -386,7 +497,10 @@
     "longitude": -93.74942,
     "miles": 148.1,
     "location": "3320 Westown Pkwy, West Des Moines, IA 50266-1111, United States",
-    "url": ""
+    "url": "",
+    "address": "3320 Westown Pkwy",
+    "city": "West Des Moines",
+    "state": "IA"
   },
   {
     "name": "O'Connell's Yogi Bear Park (Yogi Bear Jellystone Park, Amboy, Il)",
@@ -396,7 +510,10 @@
     "longitude": -89.26598,
     "miles": 250.9,
     "location": "O'Connell's Yogi Bear Park, 970 Green Wing Rd, Amboy, IL 61310, United States",
-    "url": ""
+    "url": "",
+    "address": "O'Connell's Yogi Bear Park, 970 Green Wing Rd",
+    "city": "Amboy",
+    "state": "IL"
   },
   {
     "name": "Timber View Alpaca Farm",
@@ -415,7 +532,10 @@
     "longitude": -85.12807,
     "miles": 234.1,
     "location": "7234 E State Rd 46, Batesville, IN 47006",
-    "url": "https://rvonthego.com/indiana/indian-lakes-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/indiana/indian-lakes-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "7234 E State Rd 46",
+    "city": "Batesville",
+    "state": "IN"
   },
   {
     "name": "Our Lady of Perpetual Hops",
@@ -425,7 +545,10 @@
     "longitude": -85.80722,
     "miles": 115.7,
     "location": "300 Foundation Ct, New Albany, IN 47150-9496, United States",
-    "url": ""
+    "url": "",
+    "address": "300 Foundation Ct",
+    "city": "New Albany",
+    "state": "IN"
   },
   {
     "name": "Diamond Caverns RV Resort & Golf",
@@ -435,7 +558,10 @@
     "longitude": -86.06238,
     "miles": 103.2,
     "location": "1878 Mammoth Cave Pkwy., Park City, KY 42160",
-    "url": "https://rvonthego.com/kentucky/diamond-caverns-rv-golf-club/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/kentucky/diamond-caverns-rv-golf-club/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1878 Mammoth Cave Pkwy.",
+    "city": "Park City",
+    "state": "KY"
   },
   {
     "name": "Beans Creek Winery",
@@ -445,7 +571,10 @@
     "longitude": -86.06972,
     "miles": 149.6,
     "location": "426 Ragsdale Rd, Manchester, TN 37355, United States",
-    "url": ""
+    "url": "",
+    "address": "426 Ragsdale Rd",
+    "city": "Manchester",
+    "state": "TN"
   },
   {
     "name": "Ironshield Brewing",
@@ -455,7 +584,10 @@
     "longitude": -83.98726,
     "miles": 204.6,
     "location": "457 N Chestnut St, Lawrenceville, GA 30046, United States",
-    "url": ""
+    "url": "",
+    "address": "457 N Chestnut St",
+    "city": "Lawrenceville",
+    "state": "GA"
   },
   {
     "name": "Carolina Landing",
@@ -465,7 +597,10 @@
     "longitude": -82.97764,
     "miles": 75.9,
     "location": "120 Carolina Landing Drive, Fair Play, SC 29643",
-    "url": "https://rvonthego.com/south-carolina/carolina-landing-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/south-carolina/carolina-landing-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "120 Carolina Landing Drive",
+    "city": "Fair Play",
+    "state": "SC"
   },
   {
     "name": "Cavendish Brewing Company",
@@ -475,7 +610,10 @@
     "longitude": -81.18774,
     "miles": 121.9,
     "location": "207 N Chester St, Gastonia, NC 28052, United States",
-    "url": ""
+    "url": "",
+    "address": "207 N Chester St",
+    "city": "Gastonia",
+    "state": "NC"
   },
   {
     "name": "Forest Lake RV Park & Camping Resort",
@@ -485,7 +623,10 @@
     "longitude": -80.39575,
     "miles": 84.1,
     "location": "192 Thousand Trails Dr, Advance, NC 27006",
-    "url": "https://rvonthego.com/north-carolina/forest-lake-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/north-carolina/forest-lake-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "192 Thousand Trails Dr",
+    "city": "Advance",
+    "state": "NC"
   },
   {
     "name": "The Oaks at Point South RV",
@@ -495,7 +636,10 @@
     "longitude": -80.87311,
     "miles": 272.6,
     "location": "1292 Campground Road, Yemassee, SC 29945",
-    "url": "https://rvonthego.com/south-carolina/the-oaks-at-point-south-rv/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/south-carolina/the-oaks-at-point-south-rv/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1292 Campground Road",
+    "city": "Yemassee",
+    "state": "SC"
   },
   {
     "name": "Three Flags RV Campground",
@@ -505,7 +649,10 @@
     "longitude": -82.07418,
     "miles": 306.3,
     "location": "1755 East State Road 44, Wildwood, FL 34785",
-    "url": "https://rvonthego.com/florida/three-flags-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/florida/three-flags-rv-campground/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "1755 East State Road 44",
+    "city": "Wildwood",
+    "state": "FL"
   },
   {
     "name": "Orlando RV Resort",
@@ -515,7 +662,10 @@
     "longitude": -81.68532,
     "miles": 44.4,
     "location": "2110 Thousand Trails Blvd, Clermont, FL 34714",
-    "url": "https://rvonthego.com/florida/orlando-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/florida/orlando-rv-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "2110 Thousand Trails Blvd",
+    "city": "Clermont",
+    "state": "FL"
   },
   {
     "name": "Peace River RV & Camping Resort",
@@ -525,6 +675,9 @@
     "longitude": -81.80223,
     "miles": 76.3,
     "location": "2555 US HWY 17S, Wauchula, FL 33873",
-    "url": "https://rvonthego.com/florida/peace-river-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral"
+    "url": "https://rvonthego.com/florida/peace-river-rv-camping-resort/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
+    "address": "2555 US HWY 17S",
+    "city": "Wauchula",
+    "state": "FL"
   }
 ]

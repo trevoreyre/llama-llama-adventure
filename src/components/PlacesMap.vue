@@ -8,7 +8,8 @@ query {
         arrivalDate
         departureDate
         url
-        location
+        city
+        state
         latitude
         longitude
       }
@@ -22,7 +23,7 @@ import { Loader as GoogleMapsLoader } from '@googlemaps/js-api-loader'
 import { DateTime } from 'luxon'
 
 export default {
-  name: 'LlamaMap',
+  name: 'LlamaPlacesMap',
   async mounted() {
     const googleMapsLoader = new GoogleMapsLoader({
       apiKey: process.env.GRIDSOME_GOOGLE_MAPS_API_KEY,
@@ -32,17 +33,6 @@ export default {
 
     const markerIcons = ['llama-lia', 'llama-trevor']
     const now = DateTime.now()
-    /**
-     * Extract the city and state by finding the city, state, and 5-digit ZIP code
-     * after an address.
-     *
-     * ```js
-     * const location = '7234 E State Rd 46, Batesville, IN 47006'
-     * location.match(cityStateRegex)
-     * // -> [', Batesville, IN 47006', 'Batesville, IN']
-     * ```
-     */
-    const cityStateRegex = /, ([^,]+, ..) \d\d\d\d\d/
 
     const map = new google.maps.Map(this.$refs.map, {
       zoom: 4.5,
@@ -63,7 +53,6 @@ export default {
       const position = { lat: place.latitude, lng: place.longitude }
       const icon = markerIcons[index % 2]
       const isCurrent = place.id === this.currentPlace.id
-      const cityStateMatch = place.location.match(cityStateRegex)
       const arrivalDate = DateTime.fromISO(place.arrivalDate)
       const departureDate = DateTime.fromISO(place.departureDate)
       const dateFormat = arrivalDate.hasSame(now, 'year')
@@ -78,9 +67,9 @@ export default {
 
       const infoTitle = `
         <h2 class="map-info-title">
-          ${cityStateMatch ? cityStateMatch[1] : place.name}
+          ${place.city ? `${place.city}, ${place.state}` : place.name}
         </h2>
-        ${cityStateMatch ? `<p class="map-info-place">${place.name}</p>` : ''}
+        ${place.city ? `<p class="map-info-place">${place.name}</p>` : ''}
       `
 
       const infoWindow = new google.maps.InfoWindow({
@@ -162,6 +151,7 @@ export default {
 </style>
 
 <style>
+/** Customize Google Maps styles */
 .gm-style {
   font-family: var(--font-family) !important;
   font-size: var(--font-size-default) !important;
