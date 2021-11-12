@@ -132,12 +132,12 @@ export default {
 
 <style scoped>
 .map-container {
-  padding-top: 56.25%;
+  padding-top: 100%;
 }
 
-@media screen and (max-width: 960px) {
-  .container {
-    padding-top: 100%;
+@media screen and (min-width: 840px) {
+  .map-container {
+    padding-top: 56.25%;
   }
 }
 

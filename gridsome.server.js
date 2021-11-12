@@ -214,7 +214,9 @@ async function getPlaces() {
       }),
   )
 
-  const places = flatten(trips)
+  const places = flatten(trips).sort((place1, place2) =>
+    place2.arrivalDate > place1.arrivalDate ? 1 : -1,
+  )
   return places
 }
 

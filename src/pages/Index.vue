@@ -36,7 +36,7 @@ export default {
           <Txt as="p" font-size="lg">
             Follow our adventure on the map below. See where we've been and
             where we're headed next. If you happen to be in the area, hit us up.
-            We'd love to meet and have a beer 🍺
+            We'd love to meet and have a beer!
           </Txt>
         </AppStack>
       </Container>
