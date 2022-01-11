@@ -110,15 +110,20 @@ export default {
   },
   computed: {
     places() {
-      return this.$static.places.edges.map(edge => edge.node)
+      return this.$static.places.edges
+        .map(edge => edge.node)
+        .sort((place1, place2) => {
+          return place1.arrivalDate < place2.arrivalDate ? -1 : 1
+        })
     },
     currentPlace() {
       const now = DateTime.now()
-      return this.places.find(
+      const currentPlace = this.places.find(
         place =>
           DateTime.fromISO(place.arrivalDate) <= now &&
           DateTime.fromISO(place.departureDate) > now,
       )
+      return currentPlace ?? this.places[this.places.length - 1]
     },
   },
 }
