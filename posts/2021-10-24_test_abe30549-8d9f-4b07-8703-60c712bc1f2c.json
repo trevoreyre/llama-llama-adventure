@@ -656,8 +656,11 @@
       "lastEditedTime": "2021-10-24T01:05:00.000Z",
       "hasChildren": false,
       "archived": false,
-      "type": "unsupported",
-      "unsupported": {}
+      "type": "linkToPage",
+      "linkToPage": {
+        "type": "pageId",
+        "pageId": "73b5c827-8c7a-4a07-b2b5-060ce1ae6e09"
+      }
     },
     {
       "object": "block",
@@ -666,8 +669,11 @@
       "lastEditedTime": "2021-10-24T01:06:00.000Z",
       "hasChildren": false,
       "archived": false,
-      "type": "unsupported",
-      "unsupported": {}
+      "type": "linkToPage",
+      "linkToPage": {
+        "type": "pageId",
+        "pageId": "d244c253-44b5-4260-a630-4a024ce1a4a1"
+      }
     },
     {
       "object": "block",
@@ -768,7 +774,8 @@
               "type": "date",
               "date": {
                 "start": "2021-10-23",
-                "end": null
+                "end": null,
+                "timeZone": null
               }
             },
             "annotations": {

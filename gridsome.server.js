@@ -8,7 +8,6 @@ const kebabCase = require('just-kebab-case')
 const merge = require('just-merge')
 const path = require('path')
 const typeOf = require('just-typeof')
-const util = require('util')
 const xlsx = require('xlsx')
 
 const isDevelopment = process.env.NODE_ENV === 'development'
@@ -57,17 +56,21 @@ module.exports = api => {
 async function getPosts() {
   // If in development, we can load posts directly from disk
   if (isDevelopment) {
-    let posts = []
-    const postFileNames = await fs.readdir('./posts')
+    try {
+      let posts = []
+      const postFileNames = await fs.readdir('./posts')
 
-    postFileNames
-      .filter(fileName => fileName !== 'posts.json')
-      .forEach(fileName => {
-        const post = require(`./posts/${fileName}`)
-        posts.push(post)
-      })
+      postFileNames
+        .filter(fileName => fileName !== 'posts.json')
+        .forEach(fileName => {
+          const post = require(`./posts/${fileName}`)
+          posts.push(post)
+        })
 
-    return posts
+      return posts
+    } catch (error) {
+      console.error('Unable to find posts. Fetching from Notion API instead.')
+    }
   }
 
   // For a production build, get all posts from the Notion API
@@ -149,8 +152,12 @@ async function uploadImage({ id, url }) {
 async function getPlaces() {
   // If in development, we can load places directly from disk
   if (isDevelopment) {
-    const places = require('./places/places.json')
-    return places
+    try {
+      const places = require('./places/places.json')
+      return places
+    } catch (error) {
+      console.error('Unable to find places. Skipping...')
+    }
   }
 
   const placesFileNames = await fs.readdir('./places')
