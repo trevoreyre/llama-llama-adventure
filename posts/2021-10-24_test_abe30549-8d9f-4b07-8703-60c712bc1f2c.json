@@ -3,6 +3,14 @@
   "id": "abe30549-8d9f-4b07-8703-60c712bc1f2c",
   "createdTime": "2021-10-24T00:58:00.000Z",
   "lastEditedTime": "2021-11-09T05:33:00.000Z",
+  "createdBy": {
+    "object": "user",
+    "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+  },
+  "lastEditedBy": {
+    "object": "user",
+    "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+  },
   "hasChildren": true,
   "archived": false,
   "type": "childPage",
@@ -16,10 +24,19 @@
       "id": "67f7fa55-15f9-440d-b987-3687a5dbc1f3",
       "createdTime": "2021-10-24T01:01:00.000Z",
       "lastEditedTime": "2021-10-24T01:02:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "paragraph",
       "paragraph": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -46,10 +63,19 @@
       "id": "133042bd-9735-4e74-af84-e350fa6f7d93",
       "createdTime": "2021-10-24T01:02:00.000Z",
       "lastEditedTime": "2021-10-24T01:02:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "heading1",
       "heading1": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -76,10 +102,19 @@
       "id": "ae9e2368-d191-4046-8925-b5b966e14e58",
       "createdTime": "2021-10-24T01:02:00.000Z",
       "lastEditedTime": "2021-10-24T01:02:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "heading2",
       "heading2": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -106,10 +141,19 @@
       "id": "89701cf4-558b-42ea-bdef-705f43be6b77",
       "createdTime": "2021-10-24T01:02:00.000Z",
       "lastEditedTime": "2021-10-24T01:02:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "heading3",
       "heading3": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -136,10 +180,19 @@
       "id": "e0c7979d-5c4b-4861-a7fc-94a8fdf455de",
       "createdTime": "2021-10-24T01:02:00.000Z",
       "lastEditedTime": "2021-10-24T01:03:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "paragraph",
       "paragraph": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -166,10 +219,19 @@
       "id": "3cf795be-4af7-496e-a0d7-e1641e687fbe",
       "createdTime": "2021-10-24T01:20:00.000Z",
       "lastEditedTime": "2021-11-09T05:33:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "paragraph",
       "paragraph": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -402,10 +464,20 @@
       "id": "7522b26e-f58a-4d42-87de-06e2457f6928",
       "createdTime": "2021-10-24T01:03:00.000Z",
       "lastEditedTime": "2021-10-24T01:03:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "toDo",
       "toDo": {
+        "checked": false,
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -424,8 +496,7 @@
             "plainText": "To do",
             "href": null
           }
-        ],
-        "checked": false
+        ]
       }
     },
     {
@@ -433,10 +504,20 @@
       "id": "c264762e-e829-4991-ad6d-8e85276fae2a",
       "createdTime": "2021-10-24T01:03:00.000Z",
       "lastEditedTime": "2021-10-24T01:03:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "toDo",
       "toDo": {
+        "checked": false,
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -455,8 +536,7 @@
             "plainText": "List",
             "href": null
           }
-        ],
-        "checked": false
+        ]
       }
     },
     {
@@ -464,10 +544,19 @@
       "id": "747480a0-2dd1-433e-b214-529a8ea254a4",
       "createdTime": "2021-10-24T01:03:00.000Z",
       "lastEditedTime": "2021-10-24T01:03:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "bulletedListItem",
       "bulletedListItem": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -494,10 +583,19 @@
       "id": "153cac07-615e-45ee-a411-deae94b90ace",
       "createdTime": "2021-10-24T01:03:00.000Z",
       "lastEditedTime": "2021-10-24T01:03:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "bulletedListItem",
       "bulletedListItem": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -524,10 +622,19 @@
       "id": "bdcee9c8-5c88-4688-b87a-86219d8e4050",
       "createdTime": "2021-10-24T01:03:00.000Z",
       "lastEditedTime": "2021-10-24T01:03:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "numberedListItem",
       "numberedListItem": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -554,10 +661,19 @@
       "id": "c0542625-8491-484a-90b7-2d35514a094c",
       "createdTime": "2021-10-24T01:03:00.000Z",
       "lastEditedTime": "2021-10-24T01:03:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "numberedListItem",
       "numberedListItem": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -584,10 +700,19 @@
       "id": "6f86e796-59ef-44f8-9f25-de2712635706",
       "createdTime": "2021-10-24T01:04:00.000Z",
       "lastEditedTime": "2021-10-24T01:04:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": true,
       "archived": false,
       "type": "toggle",
       "toggle": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -614,10 +739,19 @@
       "id": "bee9686c-22bc-4f44-83a1-f018008e8e05",
       "createdTime": "2021-10-24T01:04:00.000Z",
       "lastEditedTime": "2021-10-24T01:04:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "quote",
       "quote": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -644,6 +778,14 @@
       "id": "9ea55d9a-165b-45e3-8cb0-893e31d653df",
       "createdTime": "2021-10-24T01:05:00.000Z",
       "lastEditedTime": "2021-10-24T01:05:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "divider",
@@ -654,6 +796,14 @@
       "id": "fe977b59-8274-4558-a149-1f4eab49a81e",
       "createdTime": "2021-10-24T01:05:00.000Z",
       "lastEditedTime": "2021-10-24T01:05:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "linkToPage",
@@ -667,6 +817,14 @@
       "id": "4f93fd46-798b-429d-b1eb-142faec169af",
       "createdTime": "2021-10-24T01:06:00.000Z",
       "lastEditedTime": "2021-10-24T01:06:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "linkToPage",
@@ -680,10 +838,23 @@
       "id": "8fdf5475-fc5a-489a-8a96-cb8b5325f67e",
       "createdTime": "2021-10-24T01:06:00.000Z",
       "lastEditedTime": "2021-10-24T01:06:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "callout",
       "callout": {
+        "icon": {
+          "type": "emoji",
+          "emoji": "💡"
+        },
+        "color": "gray_background",
         "text": [
           {
             "type": "text",
@@ -702,11 +873,7 @@
             "plainText": "Callout",
             "href": null
           }
-        ],
-        "icon": {
-          "type": "emoji",
-          "emoji": "💡"
-        }
+        ]
       }
     },
     {
@@ -714,10 +881,19 @@
       "id": "85a46675-e66e-4dbb-b964-d9320c4e6c14",
       "createdTime": "2021-10-24T01:06:00.000Z",
       "lastEditedTime": "2021-10-24T01:07:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "paragraph",
       "paragraph": {
+        "color": "default",
         "text": [
           {
             "type": "mention",
@@ -763,10 +939,19 @@
       "id": "d4322480-fda8-4f4e-b111-ee4a17562c58",
       "createdTime": "2021-10-24T01:07:00.000Z",
       "lastEditedTime": "2021-10-24T01:08:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "paragraph",
       "paragraph": {
+        "color": "default",
         "text": [
           {
             "type": "mention",
@@ -814,10 +999,19 @@
       "id": "a9d75c61-3b15-400a-9533-a4f221936ece",
       "createdTime": "2021-10-24T01:08:00.000Z",
       "lastEditedTime": "2021-10-24T01:08:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "paragraph",
       "paragraph": {
+        "color": "default",
         "text": [
           {
             "type": "text",
@@ -844,6 +1038,14 @@
       "id": "e78e9f40-290b-4d05-89a0-99836dc82d94",
       "createdTime": "2021-10-24T01:08:00.000Z",
       "lastEditedTime": "2021-11-08T15:37:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "image",
@@ -880,6 +1082,14 @@
       "id": "59134d7c-d56b-4f56-b28e-cdab7678c7dd",
       "createdTime": "2021-10-24T01:20:00.000Z",
       "lastEditedTime": "2021-11-08T15:38:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "image",
@@ -914,6 +1124,14 @@
       "id": "e3e309e5-5611-4c5f-b897-0e0210d9139a",
       "createdTime": "2021-10-24T01:12:00.000Z",
       "lastEditedTime": "2021-11-09T05:04:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "bookmark",
@@ -945,6 +1163,14 @@
       "id": "f1f124a5-6d8d-4d7a-af6e-b30cd8ba1f9b",
       "createdTime": "2021-10-24T01:12:00.000Z",
       "lastEditedTime": "2021-10-24T01:14:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "video",
@@ -961,10 +1187,20 @@
       "id": "ee0c8834-4f47-4bb4-9825-49a249007ead",
       "createdTime": "2021-10-24T01:15:00.000Z",
       "lastEditedTime": "2021-11-09T05:04:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "code",
       "code": {
+        "caption": [],
+        "language": "javascript",
         "text": [
           {
             "type": "text",
@@ -983,8 +1219,7 @@
             "plainText": "const llamaLlamaAdventure = 'AWESOME!'",
             "href": null
           }
-        ],
-        "language": "javascript"
+        ]
       }
     },
     {
@@ -992,10 +1227,19 @@
       "id": "8845fcfd-a778-442a-b688-37f9bdc548a6",
       "createdTime": "2021-11-09T05:04:00.000Z",
       "lastEditedTime": "2021-11-09T05:04:00.000Z",
+      "createdBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
+      "lastEditedBy": {
+        "object": "user",
+        "id": "62e0afc4-2e39-40bd-86de-56163eb23b9a"
+      },
       "hasChildren": false,
       "archived": false,
       "type": "paragraph",
       "paragraph": {
+        "color": "default",
         "text": []
       }
     }

@@ -42,7 +42,7 @@ export default {
       </Container>
     </Container>
     <Container size="lg">
-      <AppStack gap="2xl">
+      <AppStack gap="2xl" align="stretch">
         <PlacesStats />
         <PlacesMap />
       </AppStack>

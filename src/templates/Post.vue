@@ -42,6 +42,7 @@ query ($id: ID!) {
       }
       heading3 {
         text {
+          type
           text {
             content
           }
@@ -222,7 +223,7 @@ export default {
               size="md"
               weight="bold"
             >
-              <template v-for="t in block.heading2.text">
+              <template v-for="t in block.heading1.text">
                 {{ t.text.content }}
               </template>
             </Heading>
@@ -235,6 +236,18 @@ export default {
               mt="2xl"
             >
               <template v-for="t in block.heading2.text">
+                {{ t.text.content }}
+              </template>
+            </Heading>
+            <Heading
+              v-if="block.type === 'heading3'"
+              :key="block.id"
+              as="h2"
+              size="sm"
+              weight="bold"
+              mt="2xl"
+            >
+              <template v-for="t in block.heading3.text">
                 {{ t.text.content }}
               </template>
             </Heading>
