@@ -10,13 +10,22 @@ export default {
 <template>
   <Css>
     <AppBar class="app-bar" theme="light">
-      <AppStack direction="row" gap="xs">
+      <AppStack direction="row" gap="lg">
         <g-link class="nav-link" active-class="active" to="/" exact>
           Home
         </g-link>
         <g-link class="nav-link" active-class="active" to="/posts">
           Notes
         </g-link>
+        <a
+          class="nav-link"
+          active-class="active"
+          href="https://llamallamaadventure-shop.fourthwall.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Shop
+        </a>
       </AppStack>
       <AppStack class="social-links" direction="row" gap="xs">
         <Link
