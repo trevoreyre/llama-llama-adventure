@@ -23,15 +23,15 @@ cloudinary.config({
 module.exports = api => {
   api.loadSource(async ({ addCollection }) => {
     // Posts
-    const postCollection = addCollection('Post')
-    const posts = await getPosts()
+    // const postCollection = addCollection('Post')
+    // const posts = await getPosts()
 
-    for (const post of posts) {
-      postCollection.addNode(post)
-      if (writeBuildFiles && !isDevelopment) {
-        await writePostToFiles(posts)
-      }
-    }
+    // for (const post of posts) {
+    //   postCollection.addNode(post)
+    //   if (writeBuildFiles && !isDevelopment) {
+    //     await writePostToFiles(posts)
+    //   }
+    // }
 
     // Places
     const placeCollection = addCollection('Place')

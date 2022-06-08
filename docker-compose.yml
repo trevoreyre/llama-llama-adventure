@@ -5,9 +5,11 @@ services:
     container_name: 'llamallamaadventure'
     build: .
     volumes:
-      - .:/home/node/llamallamaadventure
-      - /home/llamallamaadventure/app/node_modules
       - ~/.ssh:/home/node/.ssh
+      - .:/home/node/llamallamaadventure
+      - /home/node/llamallamaadventure/node_modules
+      - ../notion:/home/node/notion
+      - /home/node/notion/node_modules
     ports:
       - '3005:3005'
     stdin_open: true

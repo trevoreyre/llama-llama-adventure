@@ -1,6 +1,18 @@
 module.exports = {
   siteName: 'Llama Llama Adventure',
-  plugins: [],
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'posts/**/*.md',
+        typeName: 'Post',
+        remark: {},
+      },
+    },
+  ],
+  transformers: {
+    remark: {},
+  },
   css: {
     loaderOptions: {
       css: {

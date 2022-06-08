@@ -126,7 +126,7 @@ query {
 
   --line-height-sm: 1.25;
   --line-height-md: 1.5;
-  --line-height-lg: 1.8;
+  --line-height-lg: 2;
 
   --color-brand-100: #f6f7f8;
   --color-brand-500: #9fee80;
@@ -134,6 +134,10 @@ query {
   --color-text-primary: #4e616c;
 
   --z-index-sticky: 10;
+
+  --border-size-sm: 1px;
+  --border-size-md: 2px;
+  --border-size-lg: 4px;
 
   /* Temporary dark mode */
   /* --color-background-light: #000;

@@ -9,30 +9,28 @@ export default {
     post: Object,
   },
   computed: {
-    excerpt() {
-      // Loop through paragraph blocks to construct excerpt
-      let textContent = ''
-      const paragraphBlocks = this.post.content.filter(
-        block => block.type === 'paragraph',
-      )
-      for (const paragraphBlock of paragraphBlocks) {
-        textContent += ' '
-        for (const textBlock of paragraphBlock.paragraph.text) {
-          textContent += textBlock.plainText
-        }
-      }
-
-      const words = textContent.split(' ')
-      let excerpt = words
-        .slice(0, 50)
-        .join(' ')
-        .trim()
-      if (words.length > 50) {
-        excerpt += '...'
-      }
-
-      return excerpt
-    },
+    // excerpt() {
+    //   // Loop through paragraph blocks to construct excerpt
+    //   let textContent = ''
+    //   const paragraphBlocks = this.post.content.filter(
+    //     block => block.type === 'paragraph',
+    //   )
+    //   for (const paragraphBlock of paragraphBlocks) {
+    //     textContent += ' '
+    //     for (const textBlock of paragraphBlock.paragraph.text) {
+    //       textContent += textBlock.plainText
+    //     }
+    //   }
+    //   const words = textContent.split(' ')
+    //   let excerpt = words
+    //     .slice(0, 50)
+    //     .join(' ')
+    //     .trim()
+    //   if (words.length > 50) {
+    //     excerpt += '...'
+    //   }
+    //   return excerpt
+    // },
   },
 }
 </script>
@@ -44,7 +42,7 @@ export default {
         <Heading class="post-heading" size="lg" weight="bold" line-height="sm">
           {{ post.title }}
         </Heading>
-        <Txt theme="secondary" font-size="lg">{{ excerpt }}</Txt>
+        <Txt theme="secondary" font-size="lg">{{ post.excerpt }}</Txt>
         <Txt class="read-more" font-size="lg">
           Read more <IconArrowRight class="read-more-arrow" />
         </Txt>
@@ -55,14 +53,10 @@ export default {
 
 <style scoped>
 .post {
-  background: var(--color-brand-100);
+  width: 100%;
+  /* background: var(--color-brand-100);
   border-radius: var(--border-radius-lg);
-  --shadow: var(--shadow-lg);
-}
-
-.post-link {
-  display: block;
-  padding: var(--spacing-md) var(--spacing-sm);
+  --shadow: var(--shadow-lg); */
 }
 
 .post:hover .read-more {

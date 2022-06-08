@@ -2,156 +2,157 @@
 query ($id: ID!) {
   post(id: $id) {
     title
-    createdTime(format: "MMM D, yyyy")
-    lastEditedTime(format: "MMM D, yyyy")
+    createdAt(format: "MMM D, yyyy")
+    updatedAt(format: "MMM D, yyyy")
     path
-    content {
-      id
-      type
-      hasChildren
-      heading1 {
-        text {
-          text {
-            content
-          }
-          plainText
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-      heading2 {
-        text {
-          type
-          text {
-            content
-          }
-          plainText
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-      heading3 {
-        text {
-          type
-          text {
-            content
-          }
-          plainText
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-      paragraph {
-        text {
-          type
-          text {
-            content
-          }
-          plainText
-          href
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-      bulletedListItem {
-        text {
-          text {
-            content
-          }
-          plainText
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-      numberedListItem {
-        text {
-          text {
-            content
-          }
-          plainText
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-      toDo {
-        checked
-        text {
-          text {
-            content
-          }
-          plainText
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-      bookmark {
-        url
-        caption {
-          text {
-            content
-          }
-        }
-      }
-      image {
-        type
-        external {
-          url
-        }
-        file {
-          url
-          width
-          height
-        }
-        caption {
-          text {
-            content
-          }
-          plainText
-          annotations {
-            bold
-            italic
-            strikethrough
-            underline
-            code
-          }
-        }
-      }
-    }
+    content
+    # content {
+    #   id
+    #   type
+    #   hasChildren
+    #   heading1 {
+    #     text {
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    #   heading2 {
+    #     text {
+    #       type
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    #   heading3 {
+    #     text {
+    #       type
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    #   paragraph {
+    #     text {
+    #       type
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       href
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    #   bulletedListItem {
+    #     text {
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    #   numberedListItem {
+    #     text {
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    #   toDo {
+    #     checked
+    #     text {
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    #   bookmark {
+    #     url
+    #     caption {
+    #       text {
+    #         content
+    #       }
+    #     }
+    #   }
+    #   image {
+    #     type
+    #     external {
+    #       url
+    #     }
+    #     file {
+    #       url
+    #       width
+    #       height
+    #     }
+    #     caption {
+    #       text {
+    #         content
+    #       }
+    #       plainText
+    #       annotations {
+    #         bold
+    #         italic
+    #         strikethrough
+    #         underline
+    #         code
+    #       }
+    #     }
+    #   }
+    # }
   }
 }
 </page-query>
@@ -178,11 +179,15 @@ export default {
 <template>
   <Layout>
     <Container size="sm">
-      <AppStack gap="sm">
+      <AppStack gap="3xl">
         <Heading as="h1" size="2xl" line-height="sm">
           {{ post.title }}
         </Heading>
-        <template v-if="post.content.length">
+        <AppTypography
+          :class="$style.image"
+          v-html="post.content"
+        ></AppTypography>
+        <!-- <template v-if="post.content.length">
           <template v-for="block in post.content">
             <Txt
               as="p"
@@ -288,26 +293,16 @@ export default {
               class="image"
             />
           </template>
-        </template>
+        </template> -->
       </AppStack>
     </Container>
   </Layout>
 </template>
 
-<style scoped>
-.image {
+<style module>
+.image img {
+  width: 100%;
   border-radius: var(--border-radius-lg);
   --shadow: var(--shadow-md);
-}
-
-.code {
-  padding: var(--spacing-2xs);
-  border-radius: var(--border-radius-md);
-  background: var(--color-background-dark);
-}
-
-.inherit {
-  font-size: inherit;
-  font-weight: inherit;
 }
 </style>

@@ -2,35 +2,15 @@
 query {
   posts: allPost(
     filter: { id: { ne: "abe30549-8d9f-4b07-8703-60c712bc1f2c" } }
-    sortBy: "createdTime"
-    order: DESC
+    sort: [{ by: "createdAt", order: DESC }, { by: "title", order: ASC }]
   ) {
     edges {
       node {
         id
         title
         path
-        content {
-          id
-          type
-          hasChildren
-          paragraph {
-            text {
-              type
-              text {
-                content
-              }
-              plainText
-              annotations {
-                bold
-                italic
-                strikethrough
-                underline
-                code
-              }
-            }
-          }
-        }
+        content
+        excerpt
       }
     }
   }
@@ -54,7 +34,7 @@ export default {
 <template>
   <Layout>
     <Container size="sm">
-      <AppStack gap="2xl">
+      <AppStack gap="3xl">
         <AppStack gap="xs">
           <Heading as="h1" size="2xl" line-height="sm">Notes</Heading>
           <Txt as="p" font-size="lg">
@@ -66,11 +46,9 @@ export default {
             Maybe...
           </Txt>
         </AppStack>
-        <AppStack gap="lg">
-          <template v-for="post of posts">
-            <PostSummary :key="post.id" :post="post" />
-          </template>
-        </AppStack>
+        <template v-for="post of posts">
+          <PostSummary :key="post.id" :post="post" />
+        </template>
       </AppStack>
     </Container>
   </Layout>
