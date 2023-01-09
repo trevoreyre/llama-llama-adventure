@@ -40,7 +40,7 @@
     "just-merge": "^2.0.0",
     "just-sort-by": "^3.0.1",
     "just-typeof": "^2.0.0",
-    "luxon": "^2.0.2",
+    "luxon": "^2.5.2",
     "slugify": "^1.6.5"
   },
   "devDependencies": {
