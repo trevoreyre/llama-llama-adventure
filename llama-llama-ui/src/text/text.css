@@ -1,0 +1,177 @@
+lam-text {
+  /* Normalize */
+  box-sizing: border-box;
+  position: relative;
+
+  display: block;
+
+  /* Defaults - size */
+  font-size: var(--text-md-font-size);
+  line-height: var(--text-md-line-height);
+  /* Defaults - weight */
+  font-weight: var(--font-weight-normal);
+  /* Defaults - variant */
+  color: hsl(var(--color-text-primary));
+}
+
+lam-text::before {
+  content: '';
+  display: table;
+
+  /* Defaults - size */
+  margin-block-end: var(--text-md-margin-before);
+}
+
+lam-text::after {
+  content: '';
+  display: table;
+
+  /* Defaults - size */
+  margin-block-start: var(--text-md-margin-after);
+}
+
+lam-text:where([variant='primary']) {
+  color: hsl(var(--color-text-primary));
+}
+lam-text:where([variant='secondary']) {
+  color: hsl(var(--color-text-secondary));
+}
+
+lam-text:where([size='xs']) {
+  font-size: var(--text-xs-font-size);
+  line-height: var(--text-xs-line-height);
+  font-weight: var(--font-weight-bold);
+}
+lam-text:where([size='xs'])::before {
+  margin-block-end: var(--text-xs-margin-before);
+}
+lam-text:where([size='xs'])::after {
+  margin-block-start: var(--text-xs-margin-after);
+}
+
+lam-text:where([size='sm']) {
+  font-size: var(--text-sm-font-size);
+  line-height: var(--text-sm-line-height);
+}
+lam-text:where([size='sm'])::before {
+  margin-block-end: var(--text-sm-margin-before);
+}
+lam-text:where([size='sm'])::after {
+  margin-block-start: var(--text-sm-margin-after);
+}
+
+lam-text:where([size='md']) {
+  font-size: var(--text-md-font-size);
+  line-height: var(--text-md-line-height);
+}
+lam-text:where([size='md'])::before {
+  margin-block-end: var(--text-md-margin-before);
+}
+lam-text:where([size='md'])::after {
+  margin-block-start: var(--text-md-margin-after);
+}
+
+lam-text:where([size='lg']) {
+  font-size: var(--text-lg-font-size);
+  line-height: var(--text-lg-line-height);
+}
+lam-text:where([size='lg'])::before {
+  margin-block-end: var(--text-lg-margin-before);
+}
+lam-text:where([size='lg'])::after {
+  margin-block-start: var(--text-lg-margin-after);
+}
+
+lam-text:where([size='xl']) {
+  font-size: var(--text-xl-font-size);
+  line-height: var(--text-xl-line-height);
+}
+lam-text:where([size='xl'])::before {
+  margin-block-end: var(--text-xl-margin-before);
+}
+lam-text:where([size='xl'])::after {
+  margin-block-start: var(--text-xl-margin-after);
+}
+
+lam-text:where([size='2xl']) {
+  font-size: var(--text-2xl-font-size);
+  line-height: var(--text-2xl-line-height);
+}
+lam-text:where([size='2xl'])::before {
+  margin-block-end: var(--text-2xl-margin-before);
+}
+lam-text:where([size='2xl'])::after {
+  margin-block-start: var(--text-2xl-margin-after);
+}
+
+lam-text:where([size='3xl']) {
+  font-size: var(--text-3xl-font-size);
+  line-height: var(--text-3xl-line-height);
+  font-weight: var(--font-weight-light);
+}
+lam-text:where([size='3xl'])::before {
+  margin-block-end: var(--text-3xl-margin-before);
+}
+lam-text:where([size='3xl'])::after {
+  margin-block-start: var(--text-3xl-margin-after);
+}
+
+lam-text:where([size='4xl']) {
+  font-size: var(--text-4xl-font-size);
+  line-height: var(--text-4xl-line-height);
+  font-weight: var(--font-weight-light);
+}
+lam-text:where([size='4xl'])::before {
+  margin-block-end: var(--text-4xl-margin-before);
+}
+lam-text:where([size='4xl'])::after {
+  margin-block-start: var(--text-4xl-margin-after);
+}
+
+lam-text:where([size='5xl']) {
+  font-size: var(--text-5xl-font-size);
+  line-height: var(--text-5xl-line-height);
+  font-weight: var(--font-weight-light);
+}
+lam-text:where([size='5xl'])::before {
+  margin-block-end: var(--text-5xl-margin-before);
+}
+lam-text:where([size='5xl'])::after {
+  margin-block-start: var(--text-5xl-margin-after);
+}
+
+lam-text:where([size='6xl']) {
+  font-size: var(--text-6xl-font-size);
+  line-height: var(--text-6xl-line-height);
+  font-weight: var(--font-weight-light);
+}
+lam-text:where([size='6xl'])::before {
+  margin-block-end: var(--text-6xl-margin-before);
+}
+lam-text:where([size='6xl'])::after {
+  margin-block-start: var(--text-6xl-margin-after);
+}
+
+lam-text:where([transform='uppercase']) {
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-lg);
+}
+lam-text:where([transform='uppercase'][size='4xl']),
+lam-text:where([transform='uppercase'][size='5xl']),
+lam-text:where([transform='uppercase'][size='6xl']) {
+  letter-spacing: var(--letter-spacing-xl);
+}
+
+lam-text:where([weight='light']) {
+  font-weight: var(--font-weight-light);
+}
+lam-text:where([weight='normal']) {
+  font-weight: var(--font-weight-normal);
+}
+lam-text:where([weight='bold']) {
+  font-weight: var(--font-weight-bold);
+}
+
+lam-text:where([wrap='false']) {
+  white-space: nowrap;
+}

@@ -1,0 +1,158 @@
+---
+// @ts-nocheck
+import { getCollection } from 'astro:content'
+import { Container, Heading, LinkBlock, Stack, Text } from 'llama-llama-ui'
+import App from '~/app.astro'
+import {
+  IllustrationRectangle1,
+  IllustrationRectangle2,
+  IllustrationRectangle3,
+  IllustrationRectangle4,
+  IllustrationRectangle5,
+} from '~/components/illustrations'
+import {
+  PostSummary,
+  PostSummaryTitle,
+  PostSummaryLink,
+  PostSummaryDescription,
+} from '~/components/post-summary.js'
+import type { CollectionEntry } from 'astro:content'
+
+const notes = await getCollection('posts', ({ data }) => data.type === 'note')
+notes.sort((note1, note2) => (note1.data.createdAt < note2.data.createdAt ? 1 : -1))
+
+const illustrationRectangles = {
+  0: IllustrationRectangle1,
+  1: IllustrationRectangle2,
+  2: IllustrationRectangle3,
+  3: IllustrationRectangle4,
+  4: IllustrationRectangle5,
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[array[i], array[j]] = [array[j], array[i]]
+  }
+}
+
+function createShuffledSequence(length) {
+  const sequence = []
+  for (let i = 0; i < length; i++) {
+    sequence.push(i)
+  }
+  shuffleArray(sequence)
+  return sequence
+}
+
+function RandomNumberGenerator(min, max) {
+  this.min = min
+  this.max = max
+  this.sequence = []
+  this.currentIndex = 0
+
+  this.generateNext = function () {
+    if (this.currentIndex === 0) {
+      this.sequence = createShuffledSequence(max - min + 1)
+    }
+    const randomNumber = this.min + this.sequence[this.currentIndex]
+    this.currentIndex = (this.currentIndex + 1) % this.sequence.length
+    return randomNumber
+  }
+}
+
+const random = new RandomNumberGenerator(0, 4)
+---
+
+<App title="Notes" padding="lg">
+  <Stack gap="4xl">
+    <Container size="sm">
+      <Stack gap="lg">
+        <Heading size="5xl">Notes</Heading>
+        <Text size="xl">
+          This is where we keep some of our (terribly organized) notes on different topics we're
+          researching or thinking about. Some day we might turn some of these into proper blog
+          posts.
+        </Text>
+        <Text size="lg">Maybe...</Text>
+      </Stack>
+    </Container>
+    <Container size="xl">
+      <Stack direction="row" gap="2xl" justify="center" wrap>
+        {
+          notes.map((note) => {
+            const randomIndex = random.generateNext()
+            const IllustrationRectangle = illustrationRectangles[randomIndex]
+            return (
+              <LinkBlock href={note.slug}>
+                <PostSummary>
+                  <PostSummaryTitle size="2xl">{note.data.title}</PostSummaryTitle>
+                  <PostSummaryDescription size="xl">{note.data.excerpt}</PostSummaryDescription>
+                  <PostSummaryLink size="xl">Read more</PostSummaryLink>
+                </PostSummary>
+                <IllustrationRectangle class="post-summary-background" />
+              </LinkBlock>
+            )
+          })
+        }
+      </Stack>
+    </Container>
+  </Stack>
+</App>
+
+<style>
+  lam-link-block {
+    inline-size: 100%;
+    max-inline-size: calc(var(--breakpoint-xl) / 2 - var(--spacing-md));
+    isolation: isolate;
+  }
+
+  lla-post-summary {
+    --font-family-heading: var(--font-family-cursive);
+    font-family: var(--font-family-cursive);
+    padding: var(--spacing-lg);
+    inline-size: 100%;
+  }
+
+  lla-post-summary-title::part(host) {
+    font-weight: var(--font-weight-bold);
+    word-break: break-word;
+  }
+
+  lla-post-summary-description::part(host) {
+    word-break: break-word;
+  }
+
+  lla-post-summary::part(stack) {
+    gap: var(--spacing-lg);
+  }
+
+  .post-summary-background {
+    --color-background-primary: 41 90% 96%;
+    --color-border: var(--color-neutral-500);
+    position: absolute;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    z-index: var(--z-index-behind);
+  }
+
+  lam-link-block:nth-child(5n - 4) {
+    rotate: -1deg;
+  }
+  lam-link-block:nth-child(5n - 3) {
+    rotate: 3deg;
+    translate: -8px;
+  }
+  lam-link-block:nth-child(5n - 2) {
+    rotate: 1deg;
+    translate: 4px;
+  }
+  lam-link-block:nth-child(5n - 1) {
+    rotate: -2deg;
+  }
+  lam-link-block:nth-child(5n) {
+    rotate: 0deg;
+    translate: -6px;
+  }
+</style>

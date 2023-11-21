@@ -1,0 +1,60 @@
+---
+import type { HTMLAttributes } from 'astro/types'
+import { getEntry } from 'astro:content'
+
+type Props = HTMLAttributes<'a'>
+
+const { href, ...props } = Astro.props
+const { pathname } = Astro.url
+
+const regExpStartEndSlash = /^\/|\/$/g
+const _href = (href as string).replace(regExpStartEndSlash, '')
+const _pathname = pathname.replace(regExpStartEndSlash, '')
+const basePaths = ['/', '/posts', '/notes', '/links']
+
+let active = false
+if (basePaths.includes(pathname)) {
+  active = _href === _pathname
+} else {
+  const post = await getEntry('posts', _pathname)
+  const postType = post?.data?.type
+  active = (_href === 'posts' && postType === 'post') || (_href === 'notes' && postType === 'note')
+}
+---
+
+<a href={href} data-active={active} {...props}>
+  <slot />
+</a>
+
+<style>
+  a {
+    position: relative;
+    border-radius: var(--border-radius-md);
+    display: block;
+    color: hsl(var(--color-text-primary));
+    text-decoration: none;
+    padding-block: var(--spacing-xs);
+    padding-inline: var(--spacing-3xs);
+    font-size: var(--text-xs-font-size);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-none);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-lg);
+  }
+
+  a:hover {
+    color: var(--color-brand-700);
+  }
+
+  a[data-active]::after {
+    content: '';
+    display: block;
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: var(--border-size-lg);
+    background-color: var(--color-brand-500);
+    z-index: var(--z-index-forward);
+  }
+</style>
