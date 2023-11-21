@@ -1,12 +1,10 @@
-FROM trevoreyre/node
-ENV HOST 0.0.0.0
+FROM node:18
 USER node
+ENV HOME /home/node
+ENV PREFIX /home/node/.npm-global
 
-RUN mkdir /home/node/llamallamaadventure
-RUN mkdir /home/node/llamallamaadventure/node_modules
+RUN mkdir /home/node/.npm-global
+RUN mkdir /home/node/llama-llama-adventure
+RUN npm install -g pnpm
 
-# Linked libraries
-RUN mkdir /home/node/notion
-RUN mkdir /home/node/notion/node_modules
-
-WORKDIR /home/node/llamallamaadventure
+WORKDIR /home/node/llama-llama-adventure

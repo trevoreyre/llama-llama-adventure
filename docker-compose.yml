@@ -2,15 +2,17 @@ version: '3'
 
 services:
   app:
-    container_name: 'llamallamaadventure'
+    container_name: 'llama-llama-adventure'
     build: .
     volumes:
-      - ~/.ssh:/home/node/.ssh
-      - .:/home/node/llamallamaadventure
-      - /home/node/llamallamaadventure/node_modules
-      - ../notion:/home/node/notion
-      - /home/node/notion/node_modules
+      - .:/home/node/llama-llama-adventure
+      - ~/.bashrc:/home/node/.bashrc
+      - ~/.bash_profile:/home/node/.bash_profile
+      - ~/.gitconfig:/home/node/.gitconfig
+    environment:
+      - PLATFORM=docker
+      - HOST=0.0.0.0
     ports:
-      - '3005:3005'
+      - '9000-9010:9000-9010'
     stdin_open: true
     tty: true

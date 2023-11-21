@@ -1,0 +1,76 @@
+---
+// @ts-nocheck
+import { getCollection } from 'astro:content'
+import { Container, Heading, LinkBlock, Stack, Text } from 'llama-llama-ui'
+import App from '~/app.astro'
+import {
+  PostSummary,
+  PostSummaryTitle,
+  PostSummaryLink,
+  PostSummaryDescription,
+} from '~/components/post-summary.js'
+import type { CollectionEntry } from 'astro:content'
+
+const posts = await getCollection('posts', ({ data }) => data.type === 'post')
+posts.sort((post1, post2) => (post1.data.createdAt < post2.data.createdAt ? 1 : -1))
+---
+
+<App title="Blog" padding="lg">
+  <Container size="sm">
+    <Stack gap="4xl">
+      <Stack gap="lg">
+        <Heading size="5xl">Blog</Heading>
+        <Text size="xl">
+          This is where we keep some of our (slightly less terribly organized) posts on different
+          topics we're researching or thinking about.
+        </Text>
+      </Stack>
+      <Stack gap="2xl">
+        {
+          posts.map((post) => (
+            <>
+              <LinkBlock href={post.slug}>
+                <PostSummary>
+                  <PostSummaryTitle size="3xl">{post.data.title}</PostSummaryTitle>
+                  <PostSummaryDescription>{post.data.excerpt}</PostSummaryDescription>
+                  <PostSummaryLink>Read more</PostSummaryLink>
+                </PostSummary>
+              </LinkBlock>
+              <hr />
+            </>
+          ))
+        }
+      </Stack>
+    </Stack>
+  </Container>
+</App>
+
+<style>
+  lam-link-block {
+    inline-size: 100%;
+  }
+
+  lla-post-summary {
+    inline-size: 100%;
+  }
+
+  lla-post-summary-title::part(host) {
+    transition: color 100ms ease;
+  }
+
+  lla-post-summary:hover lla-post-summary-title::part(host) {
+    color: var(--color-brand-700);
+  }
+
+  hr {
+    border: none;
+    margin: 0px;
+    inline-size: var(--size-3xl);
+    block-size: 3px;
+    background-color: var(--color-brand-500);
+  }
+
+  hr:last-child {
+    display: none;
+  }
+</style>

@@ -1,0 +1,127 @@
+---
+import 'llama-llama-ui/src/theme.css'
+import 'llama-llama-ui/src/theme-typography.css'
+import 'llama-llama-ui/src/styles.css'
+import { AppBar, AppNav, AppNavContent, AppNavMenuButton, Container, Stack } from 'llama-llama-ui'
+import { IconEmail, IconFacebook, IconInstagram } from '~/components/icons.js'
+import NavLink from '~/components/nav-link.astro'
+import { SocialLinks } from '~/components/social-links.js'
+
+const { title, padding = 'md' } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{title ? `${title} - ` : ''}Llama Llama Adventure</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Indie+Flower&family=Shantell+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <AppBar>
+      <Container size="xl">
+        <AppNav aria-label="Main" justify="between" wrap>
+          <!-- <AppNavMenuButton /> -->
+          <!-- <AppNavContent gap="sm"> -->
+          <Stack class="links" direction="row" align="center" gap="sm" wrap>
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/posts">Blog</NavLink>
+            <NavLink href="/notes">Notes</NavLink>
+            <NavLink
+              href="https://llamallamaadventure-shop.fourthwall.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              Shop
+            </NavLink>
+            <!-- <NavLink href="/links">Links</NavLink> -->
+          </Stack>
+          <!-- </AppNavContent> -->
+          <SocialLinks />
+        </AppNav>
+      </Container>
+    </AppBar>
+    <main data-padding={padding}>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style>
+  /* TODO: CSS layers */
+  body {
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+    --font-family-heading: 'Bitter', serif;
+    /* --font-family-cursive: 'Indie Flower', cursive; */
+    --font-family-cursive: 'Shantell Sans', cursive;
+    --font-weight-bold: 700;
+
+    --color-brand-100: #f6f7f8;
+    --color-brand-100: #f1ffec;
+    --color-brand-200: #edf2f7;
+    --color-brand-500: #9fee80;
+    --color-brand-700: #58c42e;
+
+    --color-background-primary: var(--color-neutral-0);
+    --color-background-secondary: var(--color-neutral-50);
+    --color-text-primary: 202 16% 36%;
+
+    --border-size-lg: 3px;
+
+    --z-index-sticky: 10;
+  }
+
+  html {
+    block-size: 100%;
+  }
+
+  body {
+    min-block-size: 100%;
+    font-family: var(--font-family);
+    background: hsl(var(--color-background-primary));
+    color: hsl(var(--color-text-primary));
+  }
+
+  lam-app-bar {
+    padding-inline: var(--spacing-sm);
+    border-block-end: none;
+    position: sticky;
+    inset-block-start: 0;
+    z-index: var(--z-index-sticky);
+  }
+
+  lam-app-nav {
+    min-block-size: var(--size-xl);
+    row-gap: var(--spacing-3xs);
+  }
+
+  lam-app-nav lam-stack:first-child {
+    margin-inline-start: calc(-1 * var(--spacing-4xs));
+  }
+
+  lam-app-nav lam-stack:last-child {
+    margin-inline-end: calc(-1 * var(--spacing-4xs));
+  }
+
+  .links {
+    row-gap: var(--spacing-none);
+  }
+
+  main {
+    display: block;
+    padding-inline: var(--spacing-sm);
+    padding-block: var(--spacing-2xl);
+  }
+
+  main[data-padding='lg'] {
+    padding-block: var(--spacing-6xl);
+  }
+</style>

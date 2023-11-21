@@ -1,66 +1,20 @@
 {
-  "name": "llamallamaadventure",
+  "name": "llama-llama-adventure",
   "private": true,
-  "version": "1.0.0",
-  "description": "llamallamaadventure.com",
+  "version": "0.0.1",
+  "description": "Llama Llama Adventure monorepo",
   "author": "Trevor Eyre <trevoreyre@gmail.com> (https://trevoreyre.com)",
   "license": "UNLICENSED",
-  "repository": "trevoreyre/llamallamaadventure",
   "scripts": {
-    "start": "gridsome develop",
-    "clean": "rimraf dist posts places/places.json",
-    "prebuild": "yarn clean",
-    "build": "yarn build:content && yarn build:site",
-    "build:site": "gridsome build",
-    "build:content": "node scripts/build-content.js",
-    "serve": "serve -p 3005 dist",
-    "explore": "gridsome explore",
-    "lint": "vue-cli-service lint"
-  },
-  "lint-staged": {
-    "*.{js,vue}": "yarn lint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "dependencies": {
-    "@googlemaps/js-api-loader": "^1.12.8",
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.4",
-    "@notionhq/client": "^0.4.4",
-    "@slate-ui/core": "^0.0.2",
-    "cloudinary": "^1.27.1",
-    "dotenv": "^16.0.1",
-    "gridsome": "^0.7.0",
-    "just-camel-case": "^5.0.0",
-    "just-flatten-it": "^4.2.1",
-    "just-kebab-case": "^3.0.0",
-    "just-merge": "^2.0.0",
-    "just-sort-by": "^3.0.1",
-    "just-typeof": "^2.0.0",
-    "luxon": "^2.0.2",
-    "slugify": "^1.6.5"
+    "start": "turbo run start --parallel",
+    "clean": "turbo run clean --parallel",
+    "build": "turbo run build",
+    "build:app": "turbo run build:app",
+    "build:content": "turbo run build:content",
+    "build:places": "turbo run build:places",
+    "build:typography": "turbo run build:typography"
   },
   "devDependencies": {
-    "@trevoreyre/notion": "^0.0.1",
-    "@types/google.maps": "^3.46.0",
-    "@vue/cli-plugin-eslint": "^4.5.14",
-    "@vue/cli-service": "^4.5.14",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-gridsome": "^1.6.2",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-vue": "^7.20.0",
-    "husky": "^4.0.0",
-    "lint-staged": "^10.0.0",
-    "prettier": "^1.19.1",
-    "rimraf": "^3.0.2",
-    "serve": "^12.0.1",
-    "vue-eslint-parser": "^8.0.0",
-    "xlsx": "^0.17.3"
+    "turbo": "^1.9.8"
   }
 }

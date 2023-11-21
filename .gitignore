@@ -5,9 +5,11 @@ yarn-debug.log*
 yarn-error.log*
 .cache
 src/.temp
-dist
 .eslintcache
 .env
 .env.*
 !.env.example
 .DS_Store
+.turbo
+dist
+storybook-static
