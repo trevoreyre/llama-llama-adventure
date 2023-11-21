@@ -14,7 +14,7 @@ const basePaths = ['/', '/posts', '/notes', '/links']
 
 let active = false
 if (basePaths.includes(pathname)) {
-  active = _href === _pathname
+  active = (_href === _pathname) || (_href === `${_pathname}/`)
 } else {
   const post = await getEntry('posts', _pathname)
   const postType = post?.data?.type
