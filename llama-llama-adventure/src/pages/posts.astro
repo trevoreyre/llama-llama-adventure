@@ -29,7 +29,7 @@ posts.sort((post1, post2) => (post1.data.createdAt < post2.data.createdAt ? 1 : 
         {
           posts.map((post) => (
             <>
-              <LinkBlock href={post.slug}>
+              <LinkBlock href={`/${post.slug}`}>
                 <PostSummary>
                   <PostSummaryTitle size="3xl">{post.data.title}</PostSummaryTitle>
                   <PostSummaryDescription>{post.data.excerpt}</PostSummaryDescription>

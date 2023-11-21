@@ -84,7 +84,7 @@ const random = new RandomNumberGenerator(0, 4)
             const randomIndex = random.generateNext()
             const IllustrationRectangle = illustrationRectangles[randomIndex]
             return (
-              <LinkBlock href={note.slug}>
+              <LinkBlock href={`/${note.slug}`}>
                 <PostSummary>
                   <PostSummaryTitle size="2xl">{note.data.title}</PostSummaryTitle>
                   <PostSummaryDescription size="xl">{note.data.excerpt}</PostSummaryDescription>
