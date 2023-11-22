@@ -9,13 +9,14 @@
   "main": "index.js",
   "scripts": {
     "start": "astro dev --host --port 9003",
-    "clean": "rimraf src/content/places src/content/posts",
-    "prebuild": "pnpm clean",
-    "build:content": "node scripts/build-content.cjs",
-    "build:places": "node scripts/build-places.cjs",
-    "build:app": "astro build",
     "build": "pnpm build:content && pnpm build:places && pnpm build:app",
-    "preview": "astro preview"
+    "prebuild:app": "rimraf dist",
+    "build:app": "astro build",
+    "prebuild:content": "rimraf src/content/posts",
+    "build:content": "node scripts/build-content.cjs",
+    "prebuild:places": "rimraf src/content/places",
+    "build:places": "node scripts/build-places.cjs",
+    "preview": "astro preview --host --port 9003"
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.2",

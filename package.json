@@ -12,7 +12,8 @@
     "build:app": "turbo run build:app",
     "build:content": "turbo run build:content",
     "build:places": "turbo run build:places",
-    "build:typography": "turbo run build:typography"
+    "build:typography": "turbo run build:typography",
+    "preview": "turbo run preview"
   },
   "devDependencies": {
     "turbo": "^1.9.8"

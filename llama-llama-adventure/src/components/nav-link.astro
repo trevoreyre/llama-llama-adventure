@@ -10,11 +10,11 @@ const { pathname } = Astro.url
 const regExpStartEndSlash = /^\/|\/$/g
 const _href = (href as string).replace(regExpStartEndSlash, '')
 const _pathname = pathname.replace(regExpStartEndSlash, '')
-const basePaths = ['/', '/posts', '/notes', '/links']
+const basePaths = ['posts', 'notes', 'links']
 
 let active = false
-if (basePaths.includes(pathname)) {
-  active = (_href === _pathname) || (_href === `${_pathname}/`)
+if (pathname === '/' || basePaths.includes(_pathname)) {
+  active = (href === pathname) || (_href === _pathname)
 } else {
   const post = await getEntry('posts', _pathname)
   const postType = post?.data?.type
