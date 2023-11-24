@@ -112,8 +112,19 @@ const places = placesCollection.data.places
   .follow-section {
     border-radius: var(--border-radius-xl);
     border: var(--border-size-md) solid var(--color-brand-500);
-    padding: var(--spacing-2xl);
+    padding-block: var(--spacing-2xl);
+    padding-inline: var(--spacing-sm);
     background-color: var(--color-brand-100);
+  }
+
+  @media (max-width: 600px) {
+    .follow-section {
+      border-radius: var(--border-radius-none);
+      border-inline: none;
+      margin-inline: calc(-1 * var(--spacing-sm));
+      padding-block: var(--spacing-4xl);
+      inline-size: calc(100% + 2 * var(--spacing-sm));
+    }
   }
 
   .follow-container > * {
