@@ -46,26 +46,28 @@ async function getPlaces() {
               url: _place.url,
             }
 
-            if (place.location) {
-              /**
-               * Extract the city and state by finding the city, state, and 5-digit ZIP code
-               * after an address.
-               *
-               * ```js
-               * const location = '7234 E State Rd 46, Batesville, IN 47006'
-               * location.match(cityStateRegex)
-               * // -> [', Batesville, IN 47006', 'Batesville, IN']
-               * ```
-               */
-              const cityStateRegex = /, ([^,]+, ..) \d\d\d\d\d/
-              const cityStateMatch = place.location.match(cityStateRegex)
-              if (cityStateMatch) {
-                const [address] = place.location.split(cityStateMatch[0])
-                const [city, state] = cityStateMatch[1].split(', ')
-                place.address = address
-                place.city = city
-                place.state = state
-              }
+            /**
+             * Extract the city and state by finding the city, state, and 5-digit ZIP code
+             * after an address.
+             *
+             * ```js
+             * const location = '7234 E State Rd 46, Batesville, IN 47006'
+             * location.match(cityStateRegex)
+             * // -> [', Batesville, IN 47006', 'Batesville, IN']
+             * ```
+             */
+            const cityStateRegex = /,? ?([^,]+, ..) \d\d\d\d\d/
+            let cityStateMatch =
+              place.location?.match(cityStateRegex) ?? place.name.match(cityStateRegex)
+            if (cityStateMatch) {
+              const [address] =
+                place.location?.split(cityStateMatch[0]) ?? place.name.split(cityStateMatch[0])
+              const [city, state] = cityStateMatch[1].split(', ')
+              place.address = address
+              place.city = city
+              place.state = state
+            } else {
+              console.log('No city/state match:', place.location ?? place.name)
             }
 
             return place

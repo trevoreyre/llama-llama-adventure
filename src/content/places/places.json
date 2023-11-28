@@ -89,7 +89,10 @@
       "latitude": 30.57523,
       "longitude": -83.32387,
       "miles": 276.3,
-      "url": ""
+      "url": "",
+      "address": "438 NE English Ivy Trl",
+      "city": "Pinetta",
+      "state": "FL"
     },
     {
       "id": "place-17",
@@ -253,7 +256,10 @@
       "latitude": 35.18918,
       "longitude": -106.59674,
       "miles": 3.5,
-      "url": ""
+      "url": "",
+      "address": "Balloon Museum Dr NE",
+      "city": "Albuquerque",
+      "state": "NM"
     },
     {
       "id": "place-5",
@@ -291,7 +297,10 @@
       "latitude": 38.56708,
       "longitude": -109.53984,
       "miles": 3.5,
-      "url": ""
+      "url": "",
+      "address": "410 Loveridge Dr",
+      "city": "Moab",
+      "state": "UT"
     },
     {
       "id": "place-2",
@@ -328,7 +337,7 @@
       "departureDate": "2023-09-02",
       "latitude": 43.59854,
       "longitude": -116.5696,
-      "miles": 355.8,
+      "miles": 356.5,
       "location": "1530 N Ann, Nampa, ID 83687",
       "url": "https://centerpointrv.com/?utm_source=campgrounds.rvlife.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
       "address": "1530 N Ann",
@@ -357,7 +366,10 @@
       "latitude": 38.56708,
       "longitude": -109.53984,
       "miles": 2.9,
-      "url": ""
+      "url": "",
+      "address": "410 Loveridge Dr",
+      "city": "Moab",
+      "state": "UT"
     },
     {
       "id": "place-94",
@@ -408,7 +420,7 @@
       "departureDate": "2023-04-30",
       "latitude": 35.22468,
       "longitude": -101.72438,
-      "miles": 271.5,
+      "miles": 267.9,
       "location": "1100 Folsom Road, Amarillo, TX 79108",
       "url": "https://koa.com/campgrounds/amarillo/?utm_source=campgrounds.rvlife.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
       "address": "1100 Folsom Road",
@@ -422,7 +434,7 @@
       "departureDate": "2023-04-29",
       "latitude": 35.40302,
       "longitude": -97.26485,
-      "miles": 208.6,
+      "miles": 194.9,
       "location": "6200 South Choctaw Road, Choctaw, OK 73020",
       "url": "https://koa.com/campgrounds/oklahoma-city/?utm_source=campgrounds.rvlife.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
       "address": "6200 South Choctaw Road",
@@ -431,23 +443,29 @@
     },
     {
       "id": "place-89",
-      "name": "1621 W Highway 96, Mansfield, AR 72944-9062, United States",
+      "name": "Mansfield, AR 72944-9062, United States",
       "arrivalDate": "2023-04-16",
       "departureDate": "2023-04-23",
       "latitude": 35.04938,
       "longitude": -94.28503,
-      "miles": 203.3,
-      "url": ""
+      "miles": 263.4,
+      "url": "",
+      "address": "",
+      "city": "Mansfield",
+      "state": "AR"
     },
     {
       "id": "place-88",
-      "name": "25 N Main St, Franklin, AR 72536-5537, United States",
+      "name": "Franklin, AR 72536-5537, United States",
       "arrivalDate": "2023-04-09",
       "departureDate": "2023-04-16",
       "latitude": 36.17066,
       "longitude": -91.77519,
       "miles": 175.3,
-      "url": ""
+      "url": "",
+      "address": "",
+      "city": "Franklin",
+      "state": "AR"
     },
     {
       "id": "place-87",
@@ -456,7 +474,7 @@
       "departureDate": "2023-04-09",
       "latitude": 34.96316,
       "longitude": -89.82667,
-      "miles": 352.4,
+      "miles": 343.5,
       "location": "9211 Highway 178, Olive Branch, MS 38654, United States",
       "url": "",
       "address": "9211 Highway 178",
@@ -484,7 +502,7 @@
       "departureDate": "2023-04-01",
       "latitude": 30.30892,
       "longitude": -87.70831,
-      "miles": 253.9,
+      "miles": 236.2,
       "location": "18717 Barefoot Way, Gulf Shores, AL 36542",
       "url": "https://rvcoutdoors.com/gulf-shores-rv-resort/?utm_source=campgrounds.rvlife.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
       "address": "18717 Barefoot Way",
@@ -499,7 +517,10 @@
       "latitude": 30.58976,
       "longitude": -84.52303,
       "miles": 255.9,
-      "url": ""
+      "url": "",
+      "address": "1900 Havana Hwy",
+      "city": "Quincy",
+      "state": "FL"
     },
     {
       "id": "place-53",
@@ -705,7 +726,10 @@
       "latitude": 37.77137,
       "longitude": -78.27538,
       "miles": 113.7,
-      "url": ""
+      "url": "",
+      "address": "136 Thessalonia Rd",
+      "city": "Bremo Bluff",
+      "state": "VA"
     },
     {
       "id": "place-38",
@@ -813,7 +837,10 @@
       "latitude": 40.42656,
       "longitude": -78.67855,
       "miles": 191,
-      "url": ""
+      "url": "",
+      "address": "1146 Munster Rd",
+      "city": "Portage",
+      "state": "PA"
     },
     {
       "id": "place-136",
@@ -1661,8 +1688,8 @@
       "miles": 45.7,
       "location": "17465 Us Hwy 101 N Klamath, CA 95548, Klamath, CA 95548",
       "url": "https://www.chinookrvresort.com/?utm_source=campgroundreviews.com&utm_campaign=RVLife_Campgrounds&utm_medium=referral",
-      "address": "17465 Us Hwy 101 N Klamath, CA 95548",
-      "city": "Klamath",
+      "address": "",
+      "city": "17465 Us Hwy 101 N Klamath",
       "state": "CA"
     },
     {
