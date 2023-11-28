@@ -1,0 +1,165 @@
+---
+// @ts-nocheck
+import { getEntry } from 'astro:content'
+import { DateTime } from 'luxon'
+import { Container, Heading, Link, Stack, Text } from '@slate-ui/core'
+import App from '~/app.astro'
+import {
+  IllustrationHand,
+  IllustrationMap,
+  IllustrationSun,
+  IllustrationTruck,
+} from '~/components/illustrations.js'
+import { Logo } from '~/components/logo.js'
+import { NewsletterForm } from '~/components/newsletter-form.js'
+import PlacesMap from '~/components/places-map.vue'
+import { SocialLinks } from '~/components/social-links.js'
+import { Stat } from '~/components/stat.js'
+
+const placesCollection = await getEntry('places', 'places')
+const allPlaces = placesCollection.data.places
+
+const now = DateTime.now()
+const places = allPlaces.filter((place) => DateTime.fromISO(place.arrivalDate) <= now)
+
+const _miles = places.reduce((_miles, place) => _miles + (place.miles ?? 0), 0)
+const miles = Math.round(_miles).toLocaleString()
+
+const _states = new Set()
+for (const place of places) {
+  if (place.state) {
+    _states.add(place.state)
+  }
+}
+const states = _states.size
+
+const startDate = DateTime.fromISO('2020-06-13')
+const days = Math.floor(now.diff(startDate, 'days').as('days'))
+---
+
+<App>
+  <Stack gap="7xl">
+    <Container class="hero-section" size="xl">
+      <Stack gap="2xl">
+        <Heading size="5xl">
+          Hello! We are the Eyres
+          <IllustrationHand />
+        </Heading>
+        <Heading size="xl">
+          <Link href="https://trevoreyre.com" target="_blank">Trevor</Link>
+           is a software engineer, and Lia is a stay at home mom to baby girl Lennon, and our two
+          pups, Banana Pig and Mango Salsa.
+        </Heading>
+        <Heading size="xl">
+          We moved into an RV in July 2019, and started travelling full time in the summer of 2020.
+        </Heading>
+        <SocialLinks labeled gap="xs" />
+      </Stack>
+      <Logo />
+    </Container>
+    <Container class="follow-section" size="xl">
+      <Container size="xs">
+        <Stack align="center" gap="lg">
+          <Heading size="2xl" align="center" weight="bold">Follow along</Heading>
+          <Text size="lg" align="center">
+            Sign up for occasional email updates. We'll only email you with <strong>big</strong>
+             news, and you can unsubscribe any time.
+          </Text>
+          <NewsletterForm />
+        </Stack>
+      </Container>
+    </Container>
+    <Container size="xl">
+      <Stack align="stretch" gap="2xl">
+        <Container size="xs" align="start">
+          <Stack gap="lg">
+            <Heading size="2xl" weight="bold">Where are we now?</Heading>
+            <Text size="lg">
+              See where we've been and where we're headed next. If you happen to be in the area, hit
+              us up. We'd love to meet and have a beer!
+            </Text>
+          </Stack>
+        </Container>
+        <div class="stats-container">
+          <Stat>
+            <IllustrationSun slot="icon" />
+            <Heading size="4xl" weight="bold">{days}</Heading>
+            <Text size="lg" variant="secondary">Days on the road</Text>
+          </Stat>
+          <Stat>
+            <IllustrationMap slot="icon" />
+            <Heading size="4xl" weight="bold">{states}</Heading>
+            <Text size="lg" variant="secondary">States visisted</Text>
+          </Stat>
+          <Stat>
+            <IllustrationTruck slot="icon" />
+            <Heading size="4xl" weight="bold">{miles}</Heading>
+            <Text size="lg" variant="secondary">Miles towed</Text>
+          </Stat>
+        </div>
+        <PlacesMap client:only="vue" all-places={allPlaces} />
+      </Stack>
+    </Container>
+  </Stack>
+</App>
+
+<style>
+  .hero-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    align-items: center;
+  }
+
+  lla-illustration-hand {
+    display: inline-block;
+    inline-size: var(--size-3xl);
+    block-size: var(--size-3xl);
+    vertical-align: bottom;
+  }
+
+  hr {
+    border: none;
+    inline-size: 100%;
+    max-inline-size: var(--breakpoint-xs);
+    block-size: var(--border-size-sm);
+    background-color: hsl(var(--color-border));
+  }
+
+  .follow-section {
+    border-radius: var(--border-radius-xl);
+    border: var(--border-size-md) solid var(--color-brand-500);
+    padding-block: var(--spacing-2xl);
+    padding-inline: var(--spacing-sm);
+    background-color: var(--color-brand-100);
+  }
+
+  @media (max-width: 600px) {
+    .follow-section {
+      border-radius: var(--border-radius-none);
+      border-inline: none;
+      margin-inline: calc(-1 * var(--spacing-sm));
+      padding-block: var(--spacing-4xl);
+      inline-size: calc(100% + 2 * var(--spacing-sm));
+    }
+  }
+
+  .follow-container > * {
+    flex: 1;
+  }
+
+  .stats-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: var(--spacing-xl);
+  }
+
+  @media (min-width: 600px) {
+    .stats-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: start;
+      gap: var(--spacing-md);
+    }
+  }
+</style>
