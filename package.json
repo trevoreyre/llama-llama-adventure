@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@googlemaps/js-api-loader": "^1.16.2",
-    "@slate-ui/core": "^1.1.0",
+    "@slate-ui/core": "^1.1.1",
     "luxon": "^3.3.0"
   },
   "devDependencies": {
