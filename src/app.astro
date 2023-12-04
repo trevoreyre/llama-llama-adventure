@@ -1,8 +1,10 @@
 ---
+// @ts-nocheck
 import '@slate-ui/core/src/theme.css'
 import '@slate-ui/core/src/theme-typography.css'
 import '@slate-ui/core/src/styles.css'
-import { AppBar, AppNav, AppNavContent, AppNavMenuButton, Container, Stack } from '@slate-ui/core'
+import '@slate-ui/core/src/app-nav/app-nav.css'
+import { AppBar, Container, Stack } from '@slate-ui/core'
 import { IconEmail, IconFacebook, IconInstagram } from '~/components/icons.js'
 import NavLink from '~/components/nav-link.astro'
 import { SocialLinks } from '~/components/social-links.js'
@@ -10,7 +12,10 @@ import { SocialLinks } from '~/components/social-links.js'
 const { title, padding = 'md' } = Astro.props
 ---
 
-<!doctype html>
+<script>
+  import '@slate-ui/core/src/app-nav/index.js'
+</script>
+
 <html lang="en">
   <head>
     <title>{title ? `${title} - ` : ''}Llama Llama Adventure</title>
@@ -26,10 +31,10 @@ const { title, padding = 'md' } = Astro.props
   <body>
     <AppBar>
       <Container size="xl">
-        <AppNav aria-label="Main" justify="between" wrap>
-          <!-- <AppNavMenuButton /> -->
-          <!-- <AppNavContent gap="sm"> -->
-          <Stack class="links" direction="row" align="center" gap="sm" wrap>
+        <slate-app-nav aria-label="Main" justify="between" wrap open>
+          <button slate-app-nav-menu-button aria-label="Main menu"></button>
+          <slate-app-nav-content gap="sm">
+            <button slate-app-nav-menu-button aria-label="Main menu"></button>
             <NavLink href="/">Home</NavLink>
             <NavLink href="/posts">Blog</NavLink>
             <NavLink href="/notes">Notes</NavLink>
@@ -40,11 +45,10 @@ const { title, padding = 'md' } = Astro.props
             >
               Shop
             </NavLink>
-            <!-- <NavLink href="/links">Links</NavLink> -->
-          </Stack>
-          <!-- </AppNavContent> -->
+            <NavLink href="/links">Links</NavLink>
+          </slate-app-nav-content>
           <SocialLinks />
-        </AppNav>
+        </slate-app-nav>
       </Container>
     </AppBar>
     <main data-padding={padding}>
@@ -54,6 +58,8 @@ const { title, padding = 'md' } = Astro.props
 </html>
 
 <style>
+  @layer reset, theme, components-1, components-2, pages;
+
   /* TODO: CSS layers */
   body {
     --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
@@ -73,6 +79,7 @@ const { title, padding = 'md' } = Astro.props
     --color-background-primary: var(--color-neutral-0);
     --color-background-secondary: var(--color-neutral-50);
     --color-text-primary: 202 16% 36%;
+    --color-border: var(--color-neutral-200);
 
     --border-size-lg: 3px;
 
@@ -99,20 +106,16 @@ const { title, padding = 'md' } = Astro.props
   }
 
   slate-app-nav {
+    margin-inline-start: calc(-1 * var(--spacing-3xs));
     min-block-size: var(--size-xl);
     row-gap: var(--spacing-3xs);
   }
 
-  slate-app-nav slate-stack:first-child {
-    margin-inline-start: calc(-1 * var(--spacing-4xs));
-  }
-
-  slate-app-nav slate-stack:last-child {
-    margin-inline-end: calc(-1 * var(--spacing-4xs));
-  }
-
-  .links {
-    row-gap: var(--spacing-none);
+  @media screen and (max-width: 599px) {
+    slate-app-nav-content [slate-app-nav-menu-button] {
+      margin-block-start: var(--spacing-4xs);
+      margin-inline-start: var(--spacing-xs);
+    }
   }
 
   main {
