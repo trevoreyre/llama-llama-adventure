@@ -14,7 +14,7 @@ const { title, padding = 'md' } = Astro.props
 const pageTitle = title ? `${title} - Llama Llama Adventure` : 'Llama Llama Adventure'
 
 const analyticsScripts = `
-  <script is:inline>
+  <script>
     ;(function () {
       window.counterscale = {
         q: [['set', 'siteId', 'llama-llama-adventure'], ['trackPageview']],
@@ -22,11 +22,10 @@ const analyticsScripts = `
     })()
   </script>
   <script
-    is:inline
     id="counterscale-script"
     src="https://counterscale.trevoreyre.workers.dev/tracker.js"
     defer
-  />
+  ></script>
 `
 ---
 
