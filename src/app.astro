@@ -8,9 +8,26 @@ import { AppBar, Container, Stack } from '@slate-ui/core'
 import { IconEmail, IconFacebook, IconInstagram } from '~/components/icons.js'
 import NavLink from '~/components/nav-link.astro'
 import { SocialLinks } from '~/components/social-links.js'
+import { env } from '~/env.js'
 
 const { title, padding = 'md' } = Astro.props
 const pageTitle = title ? `${title} - Llama Llama Adventure` : 'Llama Llama Adventure'
+
+const analyticsScripts = `
+  <script is:inline>
+    ;(function () {
+      window.counterscale = {
+        q: [['set', 'siteId', 'llama-llama-adventure'], ['trackPageview']],
+      }
+    })()
+  </script>
+  <script
+    is:inline
+    id="counterscale-script"
+    src="https://counterscale.trevoreyre.workers.dev/tracker.js"
+    defer
+  />
+`
 ---
 
 <script>
@@ -28,6 +45,7 @@ const pageTitle = title ? `${title} - Llama Llama Adventure` : 'Llama Llama Adve
       href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Indie+Flower&family=Shantell+Sans:wght@400&display=swap"
       rel="stylesheet"
     />
+    {env.prod && <Fragment set:html={analyticsScripts} />}
   </head>
   <body>
     <AppBar>
